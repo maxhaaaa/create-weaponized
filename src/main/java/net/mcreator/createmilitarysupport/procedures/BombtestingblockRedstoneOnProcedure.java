@@ -11,11 +11,9 @@ import net.minecraft.core.particles.SimpleParticleType;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModParticleTypes;
-import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
 
 public class BombtestingblockRedstoneOnProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 		world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.BUZZ_FLASH.get()), x, y, z, 0, 1, 0);
 		if (world instanceof Level _level) {
 			if (!_level.isClientSide()) {
@@ -24,8 +22,7 @@ public class BombtestingblockRedstoneOnProcedure {
 				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("createmilitary_support:distant_nuke")), SoundSource.MASTER, 100, 1, false);
 			}
 		}
-		CreatemilitarySupportMod.queueServerWork(95, () -> {
-			MushroombasicsinbombsProcedure.execute(world, x, y, z);
-		});
+		MushroombasicsinbombsProcedure.execute(world, x, y, z);
+		world.setBlock(BlockPos.containing(x, y, z), Blocks.AIR.defaultBlockState(), 3);
 	}
 }

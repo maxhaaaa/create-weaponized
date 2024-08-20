@@ -117,8 +117,8 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onRedstoneOn": {
-      "name": "BombtestingblockRedstoneOn"
+    "onDestroyedByExplosion": {
+      "name": "Mushroombasicsinbombs"
     },
     "generateFeature": false,
     "restrictionBiomes": [],

@@ -12,12 +12,13 @@ import net.minecraft.world.level.block.Mirror;
 import net.minecraft.world.level.block.DirectionalBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.Explosion;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.createmilitarysupport.procedures.BombtestingblockRedstoneOnProcedure;
+import net.mcreator.createmilitarysupport.procedures.MushroombasicsinbombsProcedure;
 
 public class BombtestingblockBlock extends Block {
 	public static final DirectionProperty FACING = DirectionalBlock.FACING;
@@ -51,10 +52,8 @@ public class BombtestingblockBlock extends Block {
 	}
 
 	@Override
-	public void neighborChanged(BlockState blockstate, Level world, BlockPos pos, Block neighborBlock, BlockPos fromPos, boolean moving) {
-		super.neighborChanged(blockstate, world, pos, neighborBlock, fromPos, moving);
-		if (world.getBestNeighborSignal(pos) > 0) {
-			BombtestingblockRedstoneOnProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
-		}
+	public void wasExploded(Level world, BlockPos pos, Explosion e) {
+		super.wasExploded(world, pos, e);
+		MushroombasicsinbombsProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 }

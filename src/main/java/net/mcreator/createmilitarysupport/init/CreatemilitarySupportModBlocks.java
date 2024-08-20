@@ -14,6 +14,7 @@ import net.mcreator.createmilitarysupport.block.SenderblockBlock;
 import net.mcreator.createmilitarysupport.block.RivetpressBlock;
 import net.mcreator.createmilitarysupport.block.ComponentteleporterBlock;
 import net.mcreator.createmilitarysupport.block.BombtestingblockBlock;
+import net.mcreator.createmilitarysupport.block.BombCrafterBlock;
 import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
 
 public class CreatemilitarySupportModBlocks {
@@ -21,6 +22,7 @@ public class CreatemilitarySupportModBlocks {
 	public static final RegistryObject<Block> COMPONENTTELEPORTER = REGISTRY.register("componentteleporter", () -> new ComponentteleporterBlock());
 	public static final RegistryObject<Block> SENDERBLOCK = REGISTRY.register("senderblock", () -> new SenderblockBlock());
 	public static final RegistryObject<Block> RIVETPRESS = REGISTRY.register("rivetpress", () -> new RivetpressBlock());
+	public static final RegistryObject<Block> BOMB_CRAFTER = REGISTRY.register("bomb_crafter", () -> new BombCrafterBlock());
 	public static final RegistryObject<Block> BOMBTESTINGBLOCK = REGISTRY.register("bombtestingblock", () -> new BombtestingblockBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks

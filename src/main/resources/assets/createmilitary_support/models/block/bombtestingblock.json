@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "createmilitary_support:block/top_bomb_tester",
+    "up": "createmilitary_support:block/top_bomb_tester",
+    "north": "createmilitary_support:block/bomb_testing_block",
+    "east": "createmilitary_support:block/bomb_testing_block",
+    "south": "createmilitary_support:block/bomb_testing_block",
+    "west": "createmilitary_support:block/bomb_testing_block",
+    "particle": "createmilitary_support:block/top_bomb_tester"
+  },
+  "render_type": "solid"
+}

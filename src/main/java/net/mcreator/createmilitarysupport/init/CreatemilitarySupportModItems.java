@@ -96,6 +96,7 @@ public class CreatemilitarySupportModItems {
 	public static final RegistryObject<Item> RCXDCARDS = REGISTRY.register("rcxdcards", () -> new RcxdcardsItem());
 	public static final RegistryObject<Item> INFPANZERFAUST = REGISTRY.register("infpanzerfaust", () -> new InfpanzerfaustItem());
 	public static final RegistryObject<Item> RIVETPRESS = REGISTRY.register(CreatemilitarySupportModBlocks.RIVETPRESS.getId().getPath(), () -> new RivetpressDisplayItem(CreatemilitarySupportModBlocks.RIVETPRESS.get(), new Item.Properties()));
+	public static final RegistryObject<Item> BOMBTESTINGBLOCK = block(CreatemilitarySupportModBlocks.BOMBTESTINGBLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

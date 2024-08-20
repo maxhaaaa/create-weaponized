@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "createmilitary_support:blocks/bombtestingblock",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "createmilitary_support:bombtestingblock"
+        }
+      ]
+    }
+  ]
+}

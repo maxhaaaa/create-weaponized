@@ -37,8 +37,7 @@ public class MushroombasicsinbombsProcedure {
 		for (int index2 = 0; index2 < 100; index2++) {
 			while (loop < particleAmount) {
 				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.NUCLEARSMOKE.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), y,
-						(z + 5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), ((x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius) / 8), 0.05,
-						((z + 5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius) / 8));
+						(z + 5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
 				loop = loop + 1;
 			}
 			increase = increase + 1;

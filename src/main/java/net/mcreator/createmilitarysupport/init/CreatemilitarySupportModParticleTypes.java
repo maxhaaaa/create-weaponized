@@ -22,4 +22,5 @@ public class CreatemilitarySupportModParticleTypes {
 	public static final RegistryObject<SimpleParticleType> NUCLEARFIREE = REGISTRY.register("nuclearfiree", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> BASICSINBOMBSEXPLOSION_FIRE_1 = REGISTRY.register("basicsinbombsexplosion_fire_1", () -> new SimpleParticleType(true));
 	public static final RegistryObject<SimpleParticleType> BASICSINBOMBSEXPLOSIONORANGE = REGISTRY.register("basicsinbombsexplosionorange", () -> new SimpleParticleType(true));
+	public static final RegistryObject<SimpleParticleType> BUZZ_FLASH = REGISTRY.register("buzz_flash", () -> new SimpleParticleType(true));
 }

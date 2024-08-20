@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "createmilitary_support:block/machine_bottom",
+    "up": "createmilitary_support:block/machine_bottom",
+    "north": "createmilitary_support:block/machine_bottom",
+    "east": "createmilitary_support:block/machine_bottom",
+    "south": "createmilitary_support:block/machine_bottom",
+    "west": "createmilitary_support:block/machine_bottom",
+    "particle": "createmilitary_support:block/machine_bottom"
+  },
+  "render_type": "solid"
+}

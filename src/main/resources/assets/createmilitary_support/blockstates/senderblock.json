@@ -1,0 +1,27 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "createmilitary_support:block/senderblock"
+    },
+    "facing=east": {
+      "model": "createmilitary_support:block/senderblock",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "createmilitary_support:block/senderblock",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "createmilitary_support:block/senderblock",
+      "y": 270
+    },
+    "facing=up": {
+      "model": "createmilitary_support:block/senderblock",
+      "x": 270
+    },
+    "facing=down": {
+      "model": "createmilitary_support:block/senderblock",
+      "x": 90
+    }
+  }
+}

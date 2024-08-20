@@ -1,0 +1,6 @@
+{
+  "parent": "createmilitary_support:displaysettings/screwdriver.item",
+  "textures": {
+    "layer0": "createmilitary_support:item/texture"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "createmilitary_support:displaysettings/compinent_hammer_display",
+  "textures": {
+    "layer0": "createmilitary_support:item/component_hammer"
+  }
+}

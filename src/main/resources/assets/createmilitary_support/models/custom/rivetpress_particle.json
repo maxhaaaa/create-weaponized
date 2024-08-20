@@ -1,0 +1,6 @@
+{
+  "parent": "createmilitary_support:displaysettings/rivet_press.item",
+  "textures": {
+    "particle": "createmilitary_support:block/riv"
+  }
+}

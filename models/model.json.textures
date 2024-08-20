@@ -1,0 +1,10 @@
+{
+  "mappings": {
+    "default": {
+      "map": {
+        "1": "texture_sc500"
+      },
+      "name": "default"
+    }
+  }
+}

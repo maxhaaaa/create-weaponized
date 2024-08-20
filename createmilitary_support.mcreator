@@ -1,0 +1,2654 @@
+{
+  "mod_elements": [
+    {
+      "name": "AnassemblyOfcomponents",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anassembly_ofcomponents",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/AnassemblyOfcomponentsItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/anassembly_ofcomponents.json"
+        ]
+      },
+      "path": "~/tycoon/components"
+    },
+    {
+      "name": "Componenttelportergui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "componenttelportergui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/network/ComponenttelporterguiButtonMessage.java",
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/ComponenttelporterguiMenu.java",
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/ComponenttelporterguiScreen.java"
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Componentteleporter",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "componentteleporter",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/blockstates/componentteleporter.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/ComponentteleporterBlockEntity.java",
+          "src/main/resources/assets/createmilitary_support/models/block/componentteleporter.json",
+          "src/main/resources/data/createmilitary_support/loot_tables/blocks/componentteleporter.json",
+          "src/main/resources/assets/createmilitary_support/models/item/componentteleporter.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/ComponentteleporterBlock.java"
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Right_click_component",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "right_click_component",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Right_click_componentProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Clickingrequestbutton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "clickingrequestbutton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/ClickingrequestbuttonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Level1plate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_1plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/level_1plate.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level1plateItem.java"
+        ]
+      },
+      "path": "~/tycoon/components/reinforced_plate"
+    },
+    {
+      "name": "Level2plate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_2plate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level2plateItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/level_2plate.json"
+        ]
+      },
+      "path": "~/tycoon/components/reinforced_plate"
+    },
+    {
+      "name": "Level3plate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_3plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/level_3plate.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level3plateItem.java"
+        ]
+      },
+      "path": "~/tycoon/components/reinforced_plate"
+    },
+    {
+      "name": "Level4plate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_4plate",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level4plateItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/level_4plate.json"
+        ]
+      },
+      "path": "~/tycoon/components/reinforced_plate"
+    },
+    {
+      "name": "Level5plate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "level_5plate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/level_5plate.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level5plateItem.java"
+        ]
+      },
+      "path": "~/tycoon/components/reinforced_plate"
+    },
+    {
+      "name": "Finishedreinforcedplate",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "finishedreinforcedplate",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/finishedreinforcedplate.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/FinishedreinforcedplateItem.java"
+        ]
+      },
+      "path": "~/tycoon/components/reinforced_plate"
+    },
+    {
+      "name": "Screwdriver",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screwdriver",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/ScrewdriverItemModel.java",
+          "src/main/resources/assets/createmilitary_support/models/item/screwdriver.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/ScrewdriverItem.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/ScrewdriverItemRenderer.java"
+        ]
+      },
+      "path": "~/tycoon/tools/screwdriver"
+    },
+    {
+      "name": "ScrewdriverRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "screwdriver_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/ScrewdriverRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/tycoon/tools/screwdriver"
+    },
+    {
+      "name": "Senderblock",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "senderblock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/SenderblockBlockEntity.java",
+          "src/main/resources/assets/createmilitary_support/models/block/senderblock.json",
+          "src/main/resources/data/createmilitary_support/loot_tables/blocks/senderblock.json",
+          "src/main/resources/assets/createmilitary_support/models/item/senderblock.json",
+          "src/main/resources/assets/createmilitary_support/blockstates/senderblock.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/SenderblockBlock.java"
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Militarycurrencycard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "militarycurrencycard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/militarycurrencycard.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/MilitarycurrencycardItem.java"
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Buttonforcard",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buttonforcard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/ButtonforcardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Senderblockgui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "senderblockgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/SenderblockguiMenu.java",
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/SenderblockguiScreen.java",
+          "src/main/java/net/mcreator/createmilitarysupport/network/SenderblockguiButtonMessage.java"
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Strikegui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strikegui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/StrikeguiScreen.java",
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/StrikeguiMenu.java"
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Militarysupport",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "militarysupport",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "TestprojectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_cloud_test",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/TestprojectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/sc250"
+    },
+    {
+      "name": "Testprojectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testprojectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/TestprojectileEntity.java"
+        ]
+      },
+      "path": "~/military/strike_device/sc250"
+    },
+    {
+      "name": "MarkerProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marker_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/MarkerProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military"
+    },
+    {
+      "name": "Marker",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marker",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/MarkerEntity.java"
+        ]
+      },
+      "path": "~/military/strike_device/sc250"
+    },
+    {
+      "name": "Strikedevice",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strikedevice",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/StrikedeviceItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/strikedevice.json"
+        ]
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "StrikedeviceRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strikedevice_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/StrikedeviceRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "MilitarycurrencycardRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "militarycurrencycard_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/MilitarycurrencycardRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/tycoon"
+    },
+    {
+      "name": "Supportcodegenerator",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supportcodegenerator",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/inventory/SupportcodegeneratorInventoryCapability.java",
+          "src/main/resources/assets/createmilitary_support/models/item/supportcodegenerator.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/SupportcodegeneratorItem.java"
+        ]
+      },
+      "path": "~/tycoon/card_machine"
+    },
+    {
+      "name": "Testpunchcard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testpunchcard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/testpunchcard.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/TestpunchcardItem.java"
+        ]
+      },
+      "path": "~/military/strike_device/punch_cards_striker"
+    },
+    {
+      "name": "DebugRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/DebugRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Debug",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/debug.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/DebugItem.java"
+        ]
+      }
+    },
+    {
+      "name": "Fire",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "fire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/FireParticle.java",
+          "src/main/resources/assets/createmilitary_support/particles/fire.json"
+        ]
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "Smoke",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smoke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/SmokeParticle.java",
+          "src/main/resources/assets/createmilitary_support/particles/smoke.json"
+        ]
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "Textgenerator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "textgenerator",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/TextgeneratorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/tycoon/card_machine"
+    },
+    {
+      "name": "SupportCodegeneratorgui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "support_codegeneratorgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/SupportCodegeneratorguiScreen.java",
+          "src/main/java/net/mcreator/createmilitarysupport/network/SupportCodegeneratorguiButtonMessage.java",
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/SupportCodegeneratorguiMenu.java"
+        ]
+      },
+      "path": "~/tycoon/card_machine"
+    },
+    {
+      "name": "Sc250",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sc_250",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/sc_250.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Sc250Item.java"
+        ]
+      },
+      "path": "~/military/strike_device/sc250"
+    },
+    {
+      "name": "TestprojectileWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroom_cloud_tester",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/TestprojectileWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/sc250"
+    },
+    {
+      "name": "Generatecard",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "generatecard",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/GeneratecardProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/tycoon/card_machine"
+    },
+    {
+      "name": "Componenthammer",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "componenthammer",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/ComponenthammerItem.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/ComponenthammerItemModel.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/ComponenthammerItemRenderer.java",
+          "src/main/resources/assets/createmilitary_support/models/item/componenthammer.json"
+        ]
+      },
+      "path": "~/tycoon/tools/hammer"
+    },
+    {
+      "name": "ComponenthammerRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "componenthammer_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/ComponenthammerRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/tycoon/tools/hammer"
+    },
+    {
+      "name": "Loopertest",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loopertest",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/loopertest.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/LoopertestItemRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/LoopertestItem.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/LoopertestItemModel.java"
+        ]
+      },
+      "path": "~/tycoon/tools/looper_test"
+    },
+    {
+      "name": "LoopertestRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "loopertest_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/LoopertestRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/tycoon/tools/looper_test"
+    },
+    {
+      "name": "Construcables250",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "construcables_250",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/Construcables250ItemRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Construcables250Item.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/Construcables250ItemModel.java",
+          "src/main/resources/assets/createmilitary_support/models/item/construcables_250.json"
+        ]
+      },
+      "path": "~/tycoon/components/construcable s250"
+    },
+    {
+      "name": "Superleinfeild",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superleinfeild",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/superleinfeild.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/SuperleinfeildItem.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/SuperleinfeildItemRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/SuperleinfeildItemModel.java"
+        ]
+      },
+      "path": "~/wunderwaffens/super-lee enfeil"
+    },
+    {
+      "name": "SuperleinfeildRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superleinfeild_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/SuperleinfeildRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/wunderwaffens/super-lee enfeil"
+    },
+    {
+      "name": "MilitarysupportinteractkeyOnKeyReleased",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "militarysupportinteractkey_on_key_released",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/MilitarysupportinteractkeyOnKeyReleasedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/keys"
+    },
+    {
+      "name": "Militarysupportinteractkey",
+      "type": "keybind",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "militarysupportinteractkey",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/network/MilitarysupportinteractkeyMessage.java"
+        ]
+      },
+      "path": "~/keys"
+    },
+    {
+      "name": "Nomansland",
+      "type": "biome",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nomansland",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/createmilitary_support/worldgen/biome/nomansland.json"
+        ]
+      },
+      "path": "~/the myster dymensions"
+    },
+    {
+      "name": "SpecialbulletProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "specialbullet_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/SpecialbulletProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wunderwaffens/super-lee enfeil"
+    },
+    {
+      "name": "Specialbullet",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "specialbullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/SpecialbulletEntity.java"
+        ]
+      },
+      "path": "~/wunderwaffens/super-lee enfeil"
+    },
+    {
+      "name": "Soldierfire",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soldierfire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/SoldierfireEntity.java",
+          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/SoldierfireRenderer.java",
+          "src/main/resources/assets/createmilitary_support/models/item/soldierfire_spawn_egg.json"
+        ]
+      },
+      "path": "~/the myster dymensions"
+    },
+    {
+      "name": "Sc500punchcard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sc_500punchcard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/sc_500punchcard.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Sc500punchcardItem.java"
+        ]
+      },
+      "path": "~/military/strike_device/punch_cards_striker"
+    },
+    {
+      "name": "Sc250hitsablock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sc_250hitsablock",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Sc250hitsablockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/sc250"
+    },
+    {
+      "name": "Sc500",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sc_500",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/Sc500Item.java",
+          "src/main/resources/assets/createmilitary_support/models/item/sc_500.json"
+        ]
+      },
+      "path": "~/military/strike_device/sc500"
+    },
+    {
+      "name": "Sc500projectile",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sc_500projectile",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/Sc500projectileEntity.java"
+        ]
+      },
+      "path": "~/military/strike_device/sc500"
+    },
+    {
+      "name": "Sc500projectileProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sc_500projectile_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Sc500projectileProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/sc500"
+    },
+    {
+      "name": "Sc500marketProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sc_500market_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Sc500marketProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/sc500"
+    },
+    {
+      "name": "Sc500market",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sc_500market",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/Sc500marketEntity.java"
+        ]
+      },
+      "path": "~/military/strike_device/sc500"
+    },
+    {
+      "name": "Optionstextgenerator",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "optionstextgenerator",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/OptionstextgeneratorProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/tycoon/card_machine"
+    },
+    {
+      "name": "Decreasebutton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "decreasebutton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/DecreasebuttonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/tycoon/card_machine"
+    },
+    {
+      "name": "Increasebutton",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "increasebutton",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/IncreasebuttonProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/tycoon/card_machine"
+    },
+    {
+      "name": "NuketestProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuketest_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/NuketestProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/nuke"
+    },
+    {
+      "name": "Nuketest",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuketest",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/NuketestEntity.java"
+        ]
+      },
+      "path": "~/military/strike_device/nuke"
+    },
+    {
+      "name": "Explode5",
+      "type": "livingentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explode_5",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/Explode5Renderer.java",
+          "src/main/resources/assets/createmilitary_support/models/item/explode_5_spawn_egg.json",
+          "src/main/java/net/mcreator/createmilitarysupport/entity/Explode5Entity.java"
+        ]
+      }
+    },
+    {
+      "name": "Nuketest2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuketest_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Nuketest2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/nuke"
+    },
+    {
+      "name": "Explode5EntityDies",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explode_5_entity_dies",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Explode5EntityDiesProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Nuclearfire",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclearfire",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/NuclearfireParticle.java",
+          "src/main/resources/assets/createmilitary_support/particles/nuclearfire.json"
+        ]
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "MarkerWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "marker_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/MarkerWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/sc250"
+    },
+    {
+      "name": "TestprojectileProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testprojectile_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/TestprojectileProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/sc250"
+    },
+    {
+      "name": "BomboverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomboverlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/BomboverlayDisplayOverlayIngameProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/huds"
+    },
+    {
+      "name": "Bombyco",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bombyco",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/BombycoProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/huds"
+    },
+    {
+      "name": "Bomboverlay",
+      "type": "overlay",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bomboverlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/screens/BomboverlayOverlay.java"
+        ]
+      },
+      "path": "~/huds"
+    },
+    {
+      "name": "Nukecard",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nukecard",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/nukecard.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/NukecardItem.java"
+        ]
+      },
+      "path": "~/military/strike_device/punch_cards_striker"
+    },
+    {
+      "name": "Missle57",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missle_57",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/Missle57Item.java",
+          "src/main/resources/assets/createmilitary_support/models/item/missle_57.json"
+        ]
+      },
+      "path": "~/military/strike_device/precision strike- 57kg he"
+    },
+    {
+      "name": "Missle57kgProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missle_57kg_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Missle57kgProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/precision strike- 57kg he"
+    },
+    {
+      "name": "Missle57kgWhileProjectileFlyingTick",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missle_57kg_while_projectile_flying_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Missle57kgWhileProjectileFlyingTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/precision strike- 57kg he"
+    },
+    {
+      "name": "Missle57kg",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missle_57kg",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/Missle57kgEntity.java"
+        ]
+      },
+      "path": "~/military/strike_device/precision strike- 57kg he"
+    },
+    {
+      "name": "He57card",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "he_57card",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/He57cardItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/he_57card.json"
+        ]
+      },
+      "path": "~/military/strike_device/punch_cards_striker"
+    },
+    {
+      "name": "Obliterated",
+      "type": "damagetype",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "obliterated",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/createmilitary_support/damage_type/obliterated.json"
+        ]
+      },
+      "path": "~/military/strike_device/precision strike- 57kg he"
+    },
+    {
+      "name": "Missle57kgProjectileHitsPlayer",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "missle_57kg_projectile_hits_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Missle57kgProjectileHitsPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "sourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/precision strike- 57kg he"
+    },
+    {
+      "name": "Nuclearmortar",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclearmortar",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/nuclearmortar.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/NuclearmortarItem.java"
+        ]
+      },
+      "path": "~/military/strike_device/nuke"
+    },
+    {
+      "name": "Supportexplorer",
+      "type": "villagerprofession",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supportexplorer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/textures/entity/villager/profession/supportexplorer.png.mcmeta"
+        ]
+      },
+      "path": "~/tycoon/villager/start_ties_villager"
+    },
+    {
+      "name": "Villagertradesupportexplorer",
+      "type": "villagertrade",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "villagertradesupportexplorer",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/tycoon/villager/start_ties_villager"
+    },
+    {
+      "name": "Flying_bomb_overlay",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "flying_bomb_overlay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Flying_bomb_overlayProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/sc250"
+    },
+    {
+      "name": "Bombreturn",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bombreturn",
+      "metadata": {
+        "return_type": "entity",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/BombreturnProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/huds"
+    },
+    {
+      "name": "Bulletmilitarysupport",
+      "type": "tab",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bulletmilitarysupport",
+      "metadata": {
+        "files": []
+      },
+      "path": "~/tycoon/components/bullet"
+    },
+    {
+      "name": "Bullet9mmcasing",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_9mmcasing",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmcasing.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmcasingItem.java"
+        ]
+      },
+      "path": "~/tycoon/components/bullet/9mm"
+    },
+    {
+      "name": "Bullet9mmlevel2",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_9mmlevel_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmlevel_2.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmlevel2Item.java"
+        ]
+      },
+      "path": "~/tycoon/components/bullet/9mm"
+    },
+    {
+      "name": "Bullet9mmlevel3",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bullet_9mmlevel_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmlevel_3.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmlevel3Item.java"
+        ]
+      },
+      "path": "~/tycoon/components/bullet/9mm"
+    },
+    {
+      "name": "Completed9mmbullet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "completed_9mmbullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/Completed9mmbulletItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/completed_9mmbullet.json"
+        ]
+      },
+      "path": "~/tycoon/components/bullet/9mm"
+    },
+    {
+      "name": "Primer",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "primer",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/primer.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/PrimerItem.java"
+        ]
+      },
+      "path": "~/tycoon/components/bullet"
+    },
+    {
+      "name": "Headbullet",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "headbullet",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/HeadbulletItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/headbullet.json"
+        ]
+      },
+      "path": "~/tycoon/components/bullet"
+    },
+    {
+      "name": "Constructable250level2",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "constructable_250level_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/Constructable250level2Item.java",
+          "src/main/resources/assets/createmilitary_support/models/item/constructable_250level_2.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/Constructable250level2ItemRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/Constructable250level2ItemModel.java"
+        ]
+      },
+      "path": "~/tycoon/components/construcable s250"
+    },
+    {
+      "name": "Bouncingbettymine",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bouncingbettymine",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/BouncingbettymineItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/bouncingbettymine.json"
+        ]
+      },
+      "path": "~/tycoon/components/mine_bouncing"
+    },
+    {
+      "name": "StrikeDeviceanimated",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strike_deviceanimated",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/StrikeDeviceanimatedItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/strike_deviceanimated.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/StrikeDeviceanimatedItemModel.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/StrikeDeviceanimatedItemRenderer.java"
+        ]
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "Testinganimations",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testinganimations",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/TestinganimationsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "BurnyboiProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnyboi_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/BurnyboiProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/indecary"
+    },
+    {
+      "name": "Burnyboi",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "burnyboi",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/BurnyboiEntity.java"
+        ]
+      },
+      "path": "~/military/strike_device/indecary"
+    },
+    {
+      "name": "Kg50incinderay",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "kg_50incinderay",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/item/Kg50incinderayItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/kg_50incinderay.json"
+        ]
+      },
+      "path": "~/military/strike_device/punch_cards_striker"
+    },
+    {
+      "name": "Rcxd",
+      "type": "animatedentity",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcxd",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/RcxdRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/entity/RcxdEntity.java",
+          "src/main/resources/data/createmilitary_support/forge/biome_modifier/rcxd_biome_modifier.json",
+          "src/main/resources/assets/createmilitary_support/models/item/rcxd_spawn_egg.json",
+          "src/main/java/net/mcreator/createmilitarysupport/entity/model/RcxdModel.java"
+        ]
+      },
+      "path": "~/military/strike_device/rcxd"
+    },
+    {
+      "name": "RcxdDeathTimeIsReached",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcxd_death_time_is_reached",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/RcxdDeathTimeIsReachedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/rcxd"
+    },
+    {
+      "name": "Rcxdcards",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rcxdcards",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/rcxdcards.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/RcxdcardsItem.java"
+        ]
+      },
+      "path": "~/military/strike_device/punch_cards_striker"
+    },
+    {
+      "name": "Infpanzerfaust",
+      "type": "animateditem",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infpanzerfaust",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/infpanzerfaust.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/InfpanzerfaustItem.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/InfpanzerfaustItemModel.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/InfpanzerfaustItemRenderer.java"
+        ]
+      },
+      "path": "~/wunderwaffens/panzerfaust_inf"
+    },
+    {
+      "name": "Pzrocket",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "pzrocket",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/entity/PzrocketEntity.java",
+          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/PzrocketRenderer.java"
+        ]
+      },
+      "path": "~/wunderwaffens/panzerfaust_inf"
+    },
+    {
+      "name": "PzrocketProjectileHitsBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pzrocket_projectile_hits_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/PzrocketProjectileHitsBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "immediatesourceentity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wunderwaffens/panzerfaust_inf"
+    },
+    {
+      "name": "PzrocketProjectileHitsLivingEntity",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pzrocket_projectile_hits_living_entity",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/PzrocketProjectileHitsLivingEntityProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wunderwaffens/panzerfaust_inf"
+    },
+    {
+      "name": "InfpanzerfaustRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "infpanzerfaust_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/InfpanzerfaustRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/wunderwaffens/panzerfaust_inf"
+    },
+    {
+      "name": "Rivetpress",
+      "type": "animatedblock",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rivetpress",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/rivetpress.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/model/RivetpressBlockModel.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/display/RivetpressDisplayItem.java",
+          "src/main/resources/assets/createmilitary_support/blockstates/rivetpress.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/renderer/RivetpressTileRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/model/RivetpressDisplayModel.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/renderer/RivetpressDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/RivetpressBlock.java",
+          "src/main/resources/assets/createmilitary_support/models/custom/rivetpress_particle.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/RivetpressTileEntity.java"
+        ]
+      },
+      "path": "~/tycoon/rivet_press"
+    },
+    {
+      "name": "RivetpressOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "rivetpress_on_tick_update",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/RivetpressOnTickUpdateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/tycoon/rivet_press"
+    },
+    {
+      "name": "Rivetpressing",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rivetpressing",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/createmilitary_support/recipes/rivetpressing.json"
+        ]
+      },
+      "path": "~/tycoon/crafting"
+    },
+    {
+      "name": "Rivetpressing2",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rivetpressing_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/createmilitary_support/recipes/rivetpressing_2.json"
+        ]
+      },
+      "path": "~/tycoon/crafting"
+    },
+    {
+      "name": "Rivetpressing3",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rivetpressing_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/createmilitary_support/recipes/rivetpressing_3.json"
+        ]
+      },
+      "path": "~/tycoon/crafting"
+    },
+    {
+      "name": "Rivetpressing4",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rivetpressing_4",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/createmilitary_support/recipes/rivetpressing_4.json"
+        ]
+      },
+      "path": "~/tycoon/crafting"
+    },
+    {
+      "name": "Rivetpressing5",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "rivetpressing_5",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/createmilitary_support/recipes/rivetpressing_5.json"
+        ]
+      },
+      "path": "~/tycoon/crafting"
+    },
+    {
+      "name": "Bullet9mmcrafting1",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": true,
+      "registry_name": "bullet_9mmcrafting_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/createmilitary_support/recipes/bullet_9mmcrafting_1.json"
+        ]
+      },
+      "path": "~/tycoon/crafting"
+    },
+    {
+      "name": "Nuclearsmoke",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclearsmoke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/NuclearsmokeParticle.java",
+          "src/main/resources/assets/createmilitary_support/particles/nuclearsmoke.json"
+        ]
+      },
+      "path": "~/military/strike_device/nuke"
+    },
+    {
+      "name": "Nuclearfiree",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "nuclearfiree",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/NuclearfireeParticle.java",
+          "src/main/resources/assets/createmilitary_support/particles/nuclearfiree.json"
+        ]
+      },
+      "path": "~/military/strike_device/nuke"
+    },
+    {
+      "name": "BasicsinbombsexplosionFire1",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basicsinbombsexplosion_fire_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/particles/basicsinbombsexplosion_fire_1.json",
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/BasicsinbombsexplosionFire1Particle.java"
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "BasicsinbombsexplosionFire1ParticleVisualScale",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basicsinbombsexplosion_fire_1_particle_visual_scale",
+      "metadata": {
+        "return_type": "number",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/BasicsinbombsexplosionFire1ParticleVisualScaleProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Mushroombasicsinbombs",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroombasicsinbombs",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/MushroombasicsinbombsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "HudshakyActiveTickCondition",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hudshaky_active_tick_condition",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/HudshakyActiveTickConditionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Hudshaky",
+      "type": "potioneffect",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "hudshaky",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/potion/HudshakyMobEffect.java"
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Launchingblocks",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launchingblocks",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/LaunchingblocksProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/sfx"
+    },
+    {
+      "name": "Basicsinbombsexplosionorange",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "basicsinbombsexplosionorange",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/particles/basicsinbombsexplosionorange.json",
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/BasicsinbombsexplosionorangeParticle.java"
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Testbomb",
+      "type": "projectile",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "testbomb",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/TestbombRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/entity/TestbombEntity.java"
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [
+    {
+      "name": "bullet_hit",
+      "files": [
+        "080998_bullet-hit-39870"
+      ],
+      "category": "neutral",
+      "subtitle": "pow"
+    },
+    {
+      "name": "bullet_hit_2",
+      "files": [
+        "080997_bullet-39735"
+      ],
+      "category": "neutral",
+      "subtitle": "poof"
+    }
+  ],
+  "tag_elements": {
+    "ITEMS:forge:cards": [
+      "CUSTOM:Sc500punchcard",
+      "CUSTOM:Testpunchcard",
+      "CUSTOM:Nukecard",
+      "CUSTOM:He57card"
+    ],
+    "ITEMS:blaze_burner_fuel:special": [
+      "CUSTOM:AnassemblyOfcomponents",
+      "CUSTOM:Testpunchcard"
+    ],
+    "ITEMS:minecraft:tag": [
+      "Blocks.OAK_WOOD",
+      "Blocks.SPRUCE_WOOD"
+    ],
+    "ITEMS:minecraft:cards": [
+      "TAG:forge:cards"
+    ]
+  },
+  "tab_element_order": {},
+  "language_map": {
+    "en_us": {
+      "item.createmilitary_support.completed_9mmbullet": "Completed 9mm bullet",
+      "entity.createmilitary_support.rcxd": "Rcxd",
+      "item.createmilitary_support.level_2plate": "unfinished plate",
+      "gui.createmilitary_support.componenttelportergui.button_request_components_to_craft": "request components to craft",
+      "item.createmilitary_support.strike_deviceanimated": "Strike Deviceanimated",
+      "item.createmilitary_support.kg_50incinderay": "Kg 5 0incinderay",
+      "item.createmilitary_support.primer": "Primer",
+      "item.createmilitary_support.soldierfire_spawn_egg": "Soldierfire Spawn Egg",
+      "key.createmilitary_support.militarysupportinteractkey": "Militarysupportinteractkey",
+      "item.createmilitary_support.bullet_9mmlevel_2": "9mm bullet primer only",
+      "item.createmilitary_support.superleinfeild": "Super lein feild",
+      "item.createmilitary_support.anassembly_ofcomponents": "Anassembly Ofcomponents",
+      "item.createmilitary_support.bullet_9mmlevel_3": "Bullet 9mm powdered and primed",
+      "item.createmilitary_support.strikedevice": "Strike device",
+      "item.createmilitary_support.explode_5_spawn_egg": "Explode 5 Spawn Egg",
+      "gui.createmilitary_support.support_codegeneratorgui.label_currency_on_card": "currency: ",
+      "item.createmilitary_support.infpanzerfaust": "Infpanzerfaust",
+      "item.createmilitary_support.level_1plate": "unfinished plate",
+      "gui.createmilitary_support.support_codegeneratorgui.button_empty": "\u003c",
+      "death.attack.obliterated": "%1$s player was reduced to their based atoms",
+      "item.createmilitary_support.bouncingbettymine": "Bouncingbettymine",
+      "item.createmilitary_support.sc_500punchcard": "Sc 500 punch card",
+      "item.createmilitary_support.componenthammer": "Componenthammer",
+      "gui.createmilitary_support.bomboverlay.label_control_in_progress": "CONTROL IN PROGRESS",
+      "gui.createmilitary_support.support_codegeneratorgui.button_generate_s250_card": "generate",
+      "gui.createmilitary_support.support_codegeneratorgui.button_empty1": "\u003e",
+      "entity.minecraft.villager.createmilitary_support.supportexplorer": "Support explorer",
+      "item.createmilitary_support.bullet_9mmcasing": "9mm casing",
+      "item.createmilitary_support.level_4plate": "unfinished plate",
+      "block.createmilitary_support.senderblock": "Senderblock",
+      "gui.createmilitary_support.bomboverlay.label_empty": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d",
+      "effect.createmilitary_support.hudshaky": "Hudshaky",
+      "gui.createmilitary_support.senderblockgui.button_send_finished_product": "send finished product",
+      "item.createmilitary_support.militarycurrencycard": "Military currency card",
+      "item.createmilitary_support.sc_250": "Sc 250",
+      "death.attack.obliterated.item": "%1$s was deatomised by %2$s using %3$s",
+      "item.createmilitary_support.constructable_250level_2": "Construcables 250",
+      "entity.createmilitary_support.soldierfire": "Soldierfire",
+      "block.createmilitary_support.rivetpress": "Rivetpress",
+      "item.createmilitary_support.rcxd_spawn_egg": "Rcxd Spawn Egg",
+      "item.createmilitary_support.missle_57": "Missle 5 7",
+      "death.attack.obliterated.player": "%1$s died trying to outrun a missle shot from %2$s",
+      "item.createmilitary_support.nuclearmortar": "Nuclearmortar",
+      "item.createmilitary_support.he_57card": "He 57 card",
+      "item.createmilitary_support.headbullet": "bullet",
+      "item_group.createmilitary_support.militarysupport": "Military support",
+      "item.createmilitary_support.level_5plate": "unfinished plate",
+      "gui.createmilitary_support.senderblockgui.label_empty": "",
+      "gui.createmilitary_support.componenttelportergui.label_teleport": "teleport",
+      "item.createmilitary_support.finishedreinforcedplate": "Finished reinforced plate",
+      "gui.createmilitary_support.bomboverlay.label_0": "0",
+      "item.createmilitary_support.rcxdcards": "Rcxd card",
+      "item_group.createmilitary_support.bulletmilitarysupport": "Bulletmilitarysupport",
+      "item.createmilitary_support.sc_500": "Sc 5 0 0 ",
+      "block.createmilitary_support.componentteleporter": "Componentteleporter",
+      "item.createmilitary_support.testpunchcard": "sc 250 punchcard",
+      "item.createmilitary_support.supportcodegenerator": "Supportcodegenerator",
+      "gui.createmilitary_support.support_codegeneratorgui.label_15cred": "15-cred",
+      "item.createmilitary_support.screwdriver": "Screwdriver",
+      "entity.createmilitary_support.explode_5": "Explode 5",
+      "item.createmilitary_support.loopertest": "Loopertest",
+      "subtitles.bullet_hit": "pow",
+      "subtitles.bullet_hit_2": "poof",
+      "item.createmilitary_support.construcables_250": "Construcables 250",
+      "item.createmilitary_support.nukecard": "Nuke card",
+      "item.createmilitary_support.level_3plate": "unfinished plate",
+      "biome.createmilitary_support.nomansland": "Nomansland",
+      "item.createmilitary_support.debug": "Debug"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": [
+      {
+        "name": "military",
+        "children": [
+          {
+            "name": "strike_device",
+            "children": [
+              {
+                "name": "punch_cards_striker",
+                "children": []
+              },
+              {
+                "name": "sc250",
+                "children": []
+              },
+              {
+                "name": "sc500",
+                "children": []
+              },
+              {
+                "name": "nuke",
+                "children": []
+              },
+              {
+                "name": "precision strike- 57kg he",
+                "children": []
+              },
+              {
+                "name": "overlay",
+                "children": []
+              },
+              {
+                "name": "ibcm",
+                "children": []
+              },
+              {
+                "name": "indecary",
+                "children": []
+              },
+              {
+                "name": "rcxd",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "tycoon",
+        "children": [
+          {
+            "name": "components",
+            "children": [
+              {
+                "name": "reinforced_plate",
+                "children": []
+              },
+              {
+                "name": "construcable s250",
+                "children": []
+              },
+              {
+                "name": "bullet",
+                "children": [
+                  {
+                    "name": "9mm",
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "name": "mine_bouncing",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "card_machine",
+            "children": []
+          },
+          {
+            "name": "tools",
+            "children": [
+              {
+                "name": "screwdriver",
+                "children": []
+              },
+              {
+                "name": "hammer",
+                "children": []
+              },
+              {
+                "name": "looper_test",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "villager",
+            "children": [
+              {
+                "name": "start_ties_villager",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "rivet_press",
+            "children": [
+              {
+                "name": "rivet_depot",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "crafting",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "keys",
+        "children": []
+      },
+      {
+        "name": "the myster dymensions",
+        "children": []
+      },
+      {
+        "name": "wunderwaffens",
+        "children": [
+          {
+            "name": "super-lee enfeil",
+            "children": []
+          },
+          {
+            "name": "anti_personel_mine",
+            "children": []
+          },
+          {
+            "name": "panzerfaust_inf",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "huds",
+        "children": []
+      },
+      {
+        "name": "power producers",
+        "children": [
+          {
+            "name": "cell combustors",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "basics in bombs_Testing grounds",
+        "children": [
+          {
+            "name": "particles",
+            "children": []
+          },
+          {
+            "name": "sfx",
+            "children": []
+          },
+          {
+            "name": "procedural explosions",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  "workspaceSettings": {
+    "modid": "createmilitary_support",
+    "modName": "create:military_support",
+    "version": "1.0.0",
+    "author": "s204157, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [
+      "additions",
+      "geckolib"
+    ],
+    "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.createmilitarysupport"
+  },
+  "mcreatorVersion": 202400232117
+}

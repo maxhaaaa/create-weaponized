@@ -1,0 +1,7 @@
+{
+  "parent": "createmilitary_support:custom/nuclear_mortar",
+  "textures": {
+    "2": "createmilitary_support:block/nuclear_mortar",
+    "particle": "createmilitary_support:item/nuclear_mortar_item"
+  }
+}

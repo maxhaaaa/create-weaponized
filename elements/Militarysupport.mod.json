@@ -1,0 +1,11 @@
+{
+  "_fv": 66,
+  "_type": "tab",
+  "definition": {
+    "name": "Military support",
+    "icon": {
+      "value": "CUSTOM:Senderblock"
+    },
+    "showSearch": false
+  }
+}

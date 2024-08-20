@@ -1,0 +1,64 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_teleport",
+          "text": {
+            "fixedValue": "teleport"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 194,
+          "y": 54
+        }
+      },
+      {
+        "type": "outputslot",
+        "data": {
+          "id": 0,
+          "disablePickup": {
+            "fixedValue": false
+          },
+          "dropItemsWhenNotBound": true,
+          "x": 206,
+          "y": 71
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "name": "button_request_components_to_craft",
+          "text": "request components to craft",
+          "isUndecorated": false,
+          "onClick": {
+            "name": "Clickingrequestbutton"
+          },
+          "width": 166,
+          "height": 20,
+          "x": 132,
+          "y": 99
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

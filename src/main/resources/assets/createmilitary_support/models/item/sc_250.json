@@ -1,0 +1,7 @@
+{
+  "parent": "createmilitary_support:custom/sc-250",
+  "textures": {
+    "2": "createmilitary_support:block/texture",
+    "particle": "createmilitary_support:item/entity"
+  }
+}

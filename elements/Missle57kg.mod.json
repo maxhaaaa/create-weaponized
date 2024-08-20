@@ -1,0 +1,31 @@
+{
+  "_fv": 66,
+  "_type": "projectile",
+  "definition": {
+    "projectileItem": {
+      "value": "CUSTOM:Missle57"
+    },
+    "showParticles": true,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "igniteFire": false,
+    "power": 0.0,
+    "damage": 5.0,
+    "knockback": 5,
+    "entityModel": "Default",
+    "customModelTexture": "",
+    "onHitsBlock": {
+      "name": "Missle57kgProjectileHitsBlock"
+    },
+    "onHitsPlayer": {
+      "name": "Missle57kgProjectileHitsBlock"
+    },
+    "onHitsEntity": {
+      "name": "Missle57kgProjectileHitsBlock"
+    },
+    "onFlyingTick": {
+      "name": "Missle57kgWhileProjectileFlyingTick"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "bullet_hit": {
+    "subtitle": "subtitles.bullet_hit",
+    "sounds": [
+      {
+        "name": "createmilitary_support:080998_bullet-hit-39870",
+        "stream": false
+      }
+    ]
+  },
+  "bullet_hit_2": {
+    "subtitle": "subtitles.bullet_hit_2",
+    "sounds": [
+      {
+        "name": "createmilitary_support:080997_bullet-39735",
+        "stream": false
+      }
+    ]
+  }
+}

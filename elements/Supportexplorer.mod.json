@@ -1,0 +1,16 @@
+{
+  "_fv": 66,
+  "_type": "villagerprofession",
+  "definition": {
+    "displayName": "Support explorer",
+    "pointOfInterest": {
+      "value": "Blocks.SMOOTH_STONE"
+    },
+    "actionSound": {
+      "value": "CUSTOM:bullet_hit_2"
+    },
+    "hat": "Full",
+    "professionTextureFile": "armorer_29.png",
+    "zombifiedProfessionTextureFile": "armorer_29.png"
+  }
+}

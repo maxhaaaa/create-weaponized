@@ -1,0 +1,7 @@
+{
+  "parent": "createmilitary_support:custom/model",
+  "textures": {
+    "1": "createmilitary_support:block/texture_sc500",
+    "particle": "createmilitary_support:item/texture_sc500"
+  }
+}

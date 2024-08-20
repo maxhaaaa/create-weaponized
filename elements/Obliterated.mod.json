@@ -1,0 +1,12 @@
+{
+  "_fv": 66,
+  "_type": "damagetype",
+  "definition": {
+    "exhaustion": 30.0,
+    "scaling": "never",
+    "effects": "hurt",
+    "normalDeathMessage": "%1$s player was reduced to their based atoms",
+    "itemDeathMessage": "%1$s was deatomised by %2$s using %3$s",
+    "playerDeathMessage": "%1$s died trying to outrun a missle shot from %2$s"
+  }
+}

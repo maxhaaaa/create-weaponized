@@ -1,0 +1,7 @@
+{
+  "parent": "createmilitary_support:custom/he_57",
+  "textures": {
+    "0": "createmilitary_support:block/he-57",
+    "particle": "createmilitary_support:item/he57"
+  }
+}

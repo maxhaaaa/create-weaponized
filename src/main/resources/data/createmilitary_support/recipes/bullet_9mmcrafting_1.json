@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "createmilitary_support:level_5plate"
+    }
+  ],
+  "results": [
+    {
+      "item": "createmilitary_support:finishedreinforcedplate"
+    }
+  ]
+}

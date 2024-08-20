@@ -1,0 +1,7 @@
+{
+  "parent": "createmilitary_support:custom/bouncing_betty_mine_cu",
+  "textures": {
+    "0": "createmilitary_support:block/bouncing_mine",
+    "particle": "createmilitary_support:item/bouncing_betty_texture"
+  }
+}

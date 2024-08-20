@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "createmilitary_support:item/level_4_plate"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "createmilitary_support:sc_500punchcard",
+    "createmilitary_support:testpunchcard",
+    "createmilitary_support:nukecard",
+    "createmilitary_support:he_57card"
+  ]
+}

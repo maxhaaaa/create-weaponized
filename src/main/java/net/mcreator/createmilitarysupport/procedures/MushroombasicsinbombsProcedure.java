@@ -15,7 +15,7 @@ public class MushroombasicsinbombsProcedure {
 		double yheight = 0;
 		double increase = 0;
 		loop = 0;
-		particleAmount = 30;
+		particleAmount = 25;
 		xRadius = 5;
 		zRadius = 5;
 		yheight = 0;
@@ -30,7 +30,7 @@ public class MushroombasicsinbombsProcedure {
 			yheight = yheight + 1;
 		}
 		loop = 0;
-		particleAmount = 30;
+		particleAmount = 20;
 		xRadius = 15;
 		zRadius = 15;
 		yheight = 20;

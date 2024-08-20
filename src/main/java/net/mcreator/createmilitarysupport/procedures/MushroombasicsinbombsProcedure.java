@@ -2,7 +2,6 @@ package net.mcreator.createmilitarysupport.procedures;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModParticleTypes;
 
@@ -37,13 +36,10 @@ public class MushroombasicsinbombsProcedure {
 		yheight = 20;
 		for (int index2 = 0; index2 < 100; index2++) {
 			while (loop < particleAmount) {
-				while (world.isEmptyBlock(BlockPos.containing(x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius, yheight, z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius))) {
-					yheight = yheight - 1;
-				}
-				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.NUCLEARSMOKE.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), yheight,
-						(z + 5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
+				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.NUCLEARSMOKE.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), y,
+						(z + 5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), ((x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius) / 8), 0.05,
+						((z + 5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius) / 8));
 				loop = loop + 1;
-				yheight = 50;
 			}
 			increase = increase + 1;
 			if (increase == 4) {
@@ -59,7 +55,7 @@ public class MushroombasicsinbombsProcedure {
 		xRadius = 20;
 		zRadius = 20;
 		yheight = 50;
-		for (int index5 = 0; index5 < 15; index5++) {
+		for (int index4 = 0; index4 < 15; index4++) {
 			while (loop < particleAmount) {
 				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.BASICSINBOMBSEXPLOSION_FIRE_1.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight),
 						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
@@ -73,7 +69,7 @@ public class MushroombasicsinbombsProcedure {
 		xRadius = 10;
 		zRadius = 10;
 		yheight = 40;
-		for (int index7 = 0; index7 < 15; index7++) {
+		for (int index6 = 0; index6 < 15; index6++) {
 			while (loop < particleAmount) {
 				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.BASICSINBOMBSEXPLOSIONORANGE.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight),
 						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);

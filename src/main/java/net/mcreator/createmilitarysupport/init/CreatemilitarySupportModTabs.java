@@ -61,9 +61,9 @@ public class CreatemilitarySupportModTabs {
 				tabData.accept(CreatemilitarySupportModItems.INFPANZERFAUST.get());
 				tabData.accept(CreatemilitarySupportModItems.BOMB_CASING.get());
 				tabData.accept(CreatemilitarySupportModItems.LOADED_BOMB.get());
+				tabData.accept(CreatemilitarySupportModItems.BOMB_EXPLOSION_AMOUNT.get());
 				tabData.accept(CreatemilitarySupportModItems.BOMB_EXPLOSION_RADIUS.get());
 				tabData.accept(CreatemilitarySupportModBlocks.BOMB_CRAFTER.get().asItem());
-				tabData.accept(CreatemilitarySupportModItems.BOMB_EXPLOSION_AMOUNT.get());
 			})
 
 					.build());

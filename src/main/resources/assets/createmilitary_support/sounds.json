@@ -16,5 +16,14 @@
         "stream": false
       }
     ]
+  },
+  "distant_nuke": {
+    "subtitle": "subtitles.distant_nuke",
+    "sounds": [
+      {
+        "name": "createmilitary_support:nukeboom",
+        "stream": false
+      }
+    ]
   }
 }

@@ -102,9 +102,10 @@ public class CreatemilitarySupportModItems {
 	public static final RegistryObject<Item> RIVETPRESS = REGISTRY.register(CreatemilitarySupportModBlocks.RIVETPRESS.getId().getPath(), () -> new RivetpressDisplayItem(CreatemilitarySupportModBlocks.RIVETPRESS.get(), new Item.Properties()));
 	public static final RegistryObject<Item> BOMB_CASING = REGISTRY.register("bomb_casing", () -> new BombCasingItem());
 	public static final RegistryObject<Item> LOADED_BOMB = REGISTRY.register("loaded_bomb", () -> new LoadedBombItem());
+	public static final RegistryObject<Item> BOMB_EXPLOSION_AMOUNT = REGISTRY.register("bomb_explosion_amount", () -> new BombExplosionAmountItem());
 	public static final RegistryObject<Item> BOMB_EXPLOSION_RADIUS = REGISTRY.register("bomb_explosion_radius", () -> new BombExplosionRadiusItem());
 	public static final RegistryObject<Item> BOMB_CRAFTER = block(CreatemilitarySupportModBlocks.BOMB_CRAFTER);
-	public static final RegistryObject<Item> BOMB_EXPLOSION_AMOUNT = REGISTRY.register("bomb_explosion_amount", () -> new BombExplosionAmountItem());
+	public static final RegistryObject<Item> BOMBTESTINGBLOCK = block(CreatemilitarySupportModBlocks.BOMBTESTINGBLOCK);
 
 	// Start of user code block custom items
 	// End of user code block custom items

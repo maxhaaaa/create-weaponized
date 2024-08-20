@@ -15,6 +15,7 @@ import net.mcreator.createmilitarysupport.client.gui.SupportCodegeneratorguiScre
 import net.mcreator.createmilitarysupport.client.gui.StrikeguiScreen;
 import net.mcreator.createmilitarysupport.client.gui.SenderblockguiScreen;
 import net.mcreator.createmilitarysupport.client.gui.ComponenttelporterguiScreen;
+import net.mcreator.createmilitarysupport.client.gui.BombCrafterGUIScreen;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class CreatemilitarySupportModScreens {
@@ -25,6 +26,7 @@ public class CreatemilitarySupportModScreens {
 			MenuScreens.register(CreatemilitarySupportModMenus.SENDERBLOCKGUI.get(), SenderblockguiScreen::new);
 			MenuScreens.register(CreatemilitarySupportModMenus.STRIKEGUI.get(), StrikeguiScreen::new);
 			MenuScreens.register(CreatemilitarySupportModMenus.SUPPORT_CODEGENERATORGUI.get(), SupportCodegeneratorguiScreen::new);
+			MenuScreens.register(CreatemilitarySupportModMenus.BOMB_CRAFTER_GUI.get(), BombCrafterGUIScreen::new);
 		});
 	}
 }

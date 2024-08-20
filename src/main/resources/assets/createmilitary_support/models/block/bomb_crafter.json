@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "createmilitary_support:block/level_5_plate",
+    "up": "createmilitary_support:block/machine_bottom",
+    "north": "createmilitary_support:block/level_5_plate",
+    "east": "createmilitary_support:block/level_5_plate",
+    "south": "createmilitary_support:block/level_5_plate",
+    "west": "createmilitary_support:block/level_5_plate",
+    "particle": "createmilitary_support:block/level_5_plate"
+  },
+  "render_type": "solid"
+}

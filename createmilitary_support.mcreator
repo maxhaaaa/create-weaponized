@@ -2404,8 +2404,8 @@
       "registry_name": "bomb_explosion_radius",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_radius.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionRadiusItem.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionRadiusItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_radius.json"
         ]
       },
       "path": "~/BeavTests"
@@ -2545,6 +2545,28 @@
       "path": "~/basics in bombs_Testing grounds/particles"
     },
     {
+      "name": "DebugRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/DebugRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "BombtestingblockBlockDestroyedByExplosion",
       "type": "procedure",
       "compiles": true,
@@ -2578,28 +2600,6 @@
         ]
       },
       "path": "~/basics in bombs_Testing grounds/particles"
-    },
-    {
-      "name": "DebugRightclicked",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "debug_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/procedures/DebugRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
     }
   ],
   "variable_elements": [],

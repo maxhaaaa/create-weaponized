@@ -37,8 +37,8 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedOnBlock": {
-      "name": "Mushroombasicsinbombs"
+    "onRightClickedInAir": {
+      "name": "DebugRightclicked"
     },
     "enableRanged": false,
     "shootConstantly": false,

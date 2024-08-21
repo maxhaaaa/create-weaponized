@@ -2404,8 +2404,8 @@
       "registry_name": "bomb_explosion_radius",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionRadiusItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_radius.json"
+          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_radius.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionRadiusItem.java"
         ]
       },
       "path": "~/BeavTests"
@@ -2472,12 +2472,12 @@
       "registry_name": "bomb_crafter",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/block/bomb_crafter.json",
-          "src/main/resources/data/createmilitary_support/loot_tables/blocks/bomb_crafter.json",
           "src/main/resources/assets/createmilitary_support/models/item/bomb_crafter.json",
           "src/main/resources/assets/createmilitary_support/blockstates/bomb_crafter.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/BombCrafterBlock.java",
-          "src/main/java/net/mcreator/createmilitarysupport/block/entity/BombCrafterBlockEntity.java"
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/BombCrafterBlockEntity.java",
+          "src/main/resources/assets/createmilitary_support/models/block/bomb_crafter.json",
+          "src/main/resources/data/createmilitary_support/loot_tables/blocks/bomb_crafter.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/BombCrafterBlock.java"
         ]
       },
       "path": "~/BeavTests"
@@ -2522,9 +2522,9 @@
       "metadata": {
         "files": [
           "src/main/resources/assets/createmilitary_support/models/item/bombtestingblock.json",
+          "src/main/resources/data/createmilitary_support/loot_tables/blocks/bombtestingblock.json",
           "src/main/resources/assets/createmilitary_support/models/block/bombtestingblock.json",
           "src/main/resources/assets/createmilitary_support/blockstates/bombtestingblock.json",
-          "src/main/resources/data/createmilitary_support/loot_tables/blocks/bombtestingblock.json",
           "src/main/java/net/mcreator/createmilitarysupport/block/BombtestingblockBlock.java"
         ]
       },
@@ -2543,6 +2543,63 @@
         ]
       },
       "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "BombtestingblockBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bombtestingblock_block_destroyed_by_explosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/BombtestingblockBlockDestroyedByExplosionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "DebugRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/DebugRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -2570,6 +2627,14 @@
       ],
       "category": "master",
       "subtitle": "a nuclear bomb"
+    },
+    {
+      "name": "updated_nuke_noise",
+      "files": [
+        "streaming-nuclear-explosion-in-the-distance-tomas-herudek-1-00-14"
+      ],
+      "category": "master",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -2600,11 +2665,14 @@
       "gui.createmilitary_support.componenttelportergui.button_request_components_to_craft": "request components to craft",
       "item.createmilitary_support.strike_deviceanimated": "Strike Deviceanimated",
       "item.createmilitary_support.kg_50incinderay": "Kg 5 0incinderay",
+      "item.createmilitary_support.bomb_casing": "Bomb Casing",
+      "item.createmilitary_support.loaded_bomb": "Loaded Bomb",
       "item.createmilitary_support.primer": "Primer",
       "item.createmilitary_support.soldierfire_spawn_egg": "Soldierfire Spawn Egg",
       "key.createmilitary_support.militarysupportinteractkey": "Militarysupportinteractkey",
       "item.createmilitary_support.bullet_9mmlevel_2": "9mm bullet primer only",
       "item.createmilitary_support.superleinfeild": "Super lein feild",
+      "block.createmilitary_support.bombtestingblock": "Bombtestingblock",
       "item.createmilitary_support.anassembly_ofcomponents": "Anassembly Ofcomponents",
       "item.createmilitary_support.bullet_9mmlevel_3": "Bullet 9mm powdered and primed",
       "subtitles.distant_nuke": "a nuclear bomb",
@@ -2623,6 +2691,7 @@
       "gui.createmilitary_support.support_codegeneratorgui.button_empty1": "\u003e",
       "entity.minecraft.villager.createmilitary_support.supportexplorer": "Support explorer",
       "item.createmilitary_support.bullet_9mmcasing": "9mm casing",
+      "item.createmilitary_support.bomb_explosion_radius": "Bomb Explosion Radius",
       "item.createmilitary_support.level_4plate": "unfinished plate",
       "block.createmilitary_support.senderblock": "Senderblock",
       "gui.createmilitary_support.bomboverlay.label_empty": "\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d",
@@ -2630,6 +2699,7 @@
       "gui.createmilitary_support.senderblockgui.button_send_finished_product": "send finished product",
       "item.createmilitary_support.militarycurrencycard": "Military currency card",
       "item.createmilitary_support.sc_250": "Sc 250",
+      "item.createmilitary_support.bomb_explosion_amount": "Bomb Explosion Amount",
       "death.attack.obliterated.item": "%1$s was deatomised by %2$s using %3$s",
       "item.createmilitary_support.constructable_250level_2": "Construcables 250",
       "entity.createmilitary_support.soldierfire": "Soldierfire",
@@ -2645,11 +2715,14 @@
       "gui.createmilitary_support.senderblockgui.label_empty": "",
       "gui.createmilitary_support.componenttelportergui.label_teleport": "teleport",
       "item.createmilitary_support.finishedreinforcedplate": "Finished reinforced plate",
+      "subtitles.updated_nuke_noise": "",
       "gui.createmilitary_support.bomboverlay.label_0": "0",
+      "gui.createmilitary_support.bomb_crafter_gui.button_craft": "Craft",
       "item.createmilitary_support.rcxdcards": "Rcxd card",
       "item_group.createmilitary_support.bulletmilitarysupport": "Bulletmilitarysupport",
       "item.createmilitary_support.sc_500": "Sc 5 0 0 ",
       "block.createmilitary_support.componentteleporter": "Componentteleporter",
+      "block.createmilitary_support.bomb_crafter": "Bomb Crafter",
       "item.createmilitary_support.testpunchcard": "sc 250 punchcard",
       "item.createmilitary_support.supportcodegenerator": "Supportcodegenerator",
       "gui.createmilitary_support.support_codegeneratorgui.label_15cred": "15-cred",

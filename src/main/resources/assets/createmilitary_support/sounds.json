@@ -25,5 +25,13 @@
         "stream": false
       }
     ]
+  },
+  "updated_nuke_noise": {
+    "sounds": [
+      {
+        "name": "createmilitary_support:streaming-nuclear-explosion-in-the-distance-tomas-herudek-1-00-14",
+        "stream": false
+      }
+    ]
   }
 }

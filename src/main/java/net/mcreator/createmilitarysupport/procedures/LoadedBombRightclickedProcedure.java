@@ -1,6 +1,10 @@
 package net.mcreator.createmilitarysupport.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.util.RandomSource;
+import net.minecraft.util.Mth;
 
 public class LoadedBombRightclickedProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, ItemStack itemstack) {

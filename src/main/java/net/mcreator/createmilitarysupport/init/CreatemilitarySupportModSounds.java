@@ -18,4 +18,5 @@ public class CreatemilitarySupportModSounds {
 	public static final RegistryObject<SoundEvent> BULLET_HIT = REGISTRY.register("bullet_hit", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("createmilitary_support", "bullet_hit")));
 	public static final RegistryObject<SoundEvent> BULLET_HIT_2 = REGISTRY.register("bullet_hit_2", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("createmilitary_support", "bullet_hit_2")));
 	public static final RegistryObject<SoundEvent> DISTANT_NUKE = REGISTRY.register("distant_nuke", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("createmilitary_support", "distant_nuke")));
+	public static final RegistryObject<SoundEvent> UPDATED_NUKE_NOISE = REGISTRY.register("updated_nuke_noise", () -> SoundEvent.createVariableRangeEvent(new ResourceLocation("createmilitary_support", "updated_nuke_noise")));
 }

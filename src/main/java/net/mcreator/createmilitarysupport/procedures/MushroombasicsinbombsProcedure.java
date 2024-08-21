@@ -1,7 +1,13 @@
 package net.mcreator.createmilitarysupport.procedures;
 
+import net.minecraftforge.registries.ForgeRegistries;
+
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.BlockPos;
 
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModParticleTypes;
 
@@ -14,6 +20,14 @@ public class MushroombasicsinbombsProcedure {
 		double particleAmount = 0;
 		double yheight = 0;
 		double increase = 0;
+		world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.BUZZ_FLASH.get()), x, y, z, 0, 1, 0);
+		if (world instanceof Level _level) {
+			if (!_level.isClientSide()) {
+				_level.playSound(null, BlockPos.containing(x, y, z), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("createmilitary_support:updated_nuke_noise")), SoundSource.MASTER, 1000, 1);
+			} else {
+				_level.playLocalSound(x, y, z, ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("createmilitary_support:updated_nuke_noise")), SoundSource.MASTER, 1000, 1, false);
+			}
+		}
 		loop = 0;
 		particleAmount = 25;
 		xRadius = 5;
@@ -23,7 +37,7 @@ public class MushroombasicsinbombsProcedure {
 		for (int index0 = 0; index0 < 40; index0++) {
 			while (loop < particleAmount) {
 				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.BASICSINBOMBSEXPLOSION_FIRE_1.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight),
-						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
+						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0.01);
 				loop = loop + 1;
 			}
 			loop = 0;
@@ -37,7 +51,7 @@ public class MushroombasicsinbombsProcedure {
 		for (int index2 = 0; index2 < 100; index2++) {
 			while (loop < particleAmount) {
 				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.NUCLEARSMOKE.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), y,
-						(z + 5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
+						(z + 5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0.01);
 				loop = loop + 1;
 			}
 			increase = increase + 1;
@@ -57,7 +71,7 @@ public class MushroombasicsinbombsProcedure {
 		for (int index4 = 0; index4 < 15; index4++) {
 			while (loop < particleAmount) {
 				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.BASICSINBOMBSEXPLOSION_FIRE_1.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight),
-						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
+						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0.01);
 				loop = loop + 1;
 			}
 			loop = 0;
@@ -71,7 +85,7 @@ public class MushroombasicsinbombsProcedure {
 		for (int index6 = 0; index6 < 15; index6++) {
 			while (loop < particleAmount) {
 				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.BASICSINBOMBSEXPLOSIONORANGE.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight),
-						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
+						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0.01);
 				loop = loop + 1;
 			}
 			loop = 0;

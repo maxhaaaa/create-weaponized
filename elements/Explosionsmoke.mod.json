@@ -2,22 +2,22 @@
   "_fv": 66,
   "_type": "particle",
   "definition": {
-    "texture": "buzz_flash",
+    "texture": "explosion_smoke",
     "animate": false,
     "frameDuration": 1,
     "width": 0.2,
     "height": 0.2,
     "scale": {
-      "fixedValue": 1000.0
+      "fixedValue": 5.0
     },
     "speedFactor": 1.0,
-    "gravity": 0.0,
-    "maxAge": 100,
-    "maxAgeDiff": 100,
+    "gravity": -0.05,
+    "maxAge": 300,
+    "maxAgeDiff": 300,
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,
     "canCollide": false,
     "alwaysShow": true,
-    "renderType": "LIT"
+    "renderType": "OPAQUE"
   }
 }

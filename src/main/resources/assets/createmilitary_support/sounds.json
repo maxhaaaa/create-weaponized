@@ -33,5 +33,14 @@
         "stream": false
       }
     ]
+  },
+  "impact_beforeboomthenboom": {
+    "subtitle": "subtitles.impact_beforeboomthenboom",
+    "sounds": [
+      {
+        "name": "createmilitary_support:hitthenboom",
+        "stream": false
+      }
+    ]
   }
 }

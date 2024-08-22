@@ -2404,8 +2404,8 @@
       "registry_name": "bomb_explosion_radius",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionRadiusItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_radius.json"
+          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_radius.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionRadiusItem.java"
         ]
       },
       "path": "~/BeavTests"
@@ -2600,6 +2600,113 @@
         ]
       },
       "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Explosionsmoke",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosionsmoke",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/ExplosionsmokeParticle.java",
+          "src/main/resources/assets/createmilitary_support/particles/explosionsmoke.json"
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Mushroomcloudpart1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroomcloudpart_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Mushroomcloudpart1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Mushroomcloudpart2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroomcloudpart_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Mushroomcloudpart2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Mushroomfunctions",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroomfunctions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/MushroomfunctionsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
     }
   ],
   "variable_elements": [],
@@ -2635,6 +2742,14 @@
       ],
       "category": "master",
       "subtitle": ""
+    },
+    {
+      "name": "impact_beforeboomthenboom",
+      "files": [
+        "hitthenboom"
+      ],
+      "category": "master",
+      "subtitle": "used for bombs lol"
     }
   ],
   "tag_elements": {
@@ -2675,6 +2790,7 @@
       "block.createmilitary_support.bombtestingblock": "Bombtestingblock",
       "item.createmilitary_support.anassembly_ofcomponents": "Anassembly Ofcomponents",
       "item.createmilitary_support.bullet_9mmlevel_3": "Bullet 9mm powdered and primed",
+      "subtitles.impact_beforeboomthenboom": "used for bombs lol",
       "subtitles.distant_nuke": "a nuclear bomb",
       "item.createmilitary_support.strikedevice": "Strike device",
       "item.createmilitary_support.explode_5_spawn_egg": "Explode 5 Spawn Egg",
@@ -2918,6 +3034,10 @@
       },
       {
         "name": "the myster dymensions",
+        "children": []
+      },
+      {
+        "name": "testings",
         "children": []
       }
     ]

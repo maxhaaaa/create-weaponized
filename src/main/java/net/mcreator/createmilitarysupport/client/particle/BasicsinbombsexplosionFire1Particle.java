@@ -40,7 +40,7 @@ public class BasicsinbombsexplosionFire1Particle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 		this.lifetime = (int) Math.max(1, 200 + (this.random.nextInt(400) - 200));
-		this.gravity = 0f;
+		this.gravity = -1f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
 		this.yd = vy * 1;

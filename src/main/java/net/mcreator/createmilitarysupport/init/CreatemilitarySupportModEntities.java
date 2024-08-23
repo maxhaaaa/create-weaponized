@@ -29,6 +29,7 @@ import net.mcreator.createmilitarysupport.entity.Missle57kgEntity;
 import net.mcreator.createmilitarysupport.entity.MarkerEntity;
 import net.mcreator.createmilitarysupport.entity.Explode5Entity;
 import net.mcreator.createmilitarysupport.entity.BurnyboiEntity;
+import net.mcreator.createmilitarysupport.entity.BeavTestProjectileEntity;
 import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -66,6 +67,8 @@ public class CreatemilitarySupportModEntities {
 			EntityType.Builder.<PzrocketEntity>of(PzrocketEntity::new, MobCategory.MISC).setCustomClientFactory(PzrocketEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<TestbombEntity>> TESTBOMB = register("testbomb",
 			EntityType.Builder.<TestbombEntity>of(TestbombEntity::new, MobCategory.MISC).setCustomClientFactory(TestbombEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<BeavTestProjectileEntity>> BEAV_TEST_PROJECTILE = register("beav_test_projectile", EntityType.Builder.<BeavTestProjectileEntity>of(BeavTestProjectileEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(BeavTestProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

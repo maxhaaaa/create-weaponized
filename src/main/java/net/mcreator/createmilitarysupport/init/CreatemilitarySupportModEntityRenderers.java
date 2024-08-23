@@ -34,5 +34,6 @@ public class CreatemilitarySupportModEntityRenderers {
 		event.registerEntityRenderer(CreatemilitarySupportModEntities.RCXD.get(), RcxdRenderer::new);
 		event.registerEntityRenderer(CreatemilitarySupportModEntities.PZROCKET.get(), PzrocketRenderer::new);
 		event.registerEntityRenderer(CreatemilitarySupportModEntities.TESTBOMB.get(), TestbombRenderer::new);
+		event.registerEntityRenderer(CreatemilitarySupportModEntities.BEAV_TEST_PROJECTILE.get(), ThrownItemRenderer::new);
 	}
 }

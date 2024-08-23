@@ -1,0 +1,18 @@
+{
+  "parent": "forge:item/default",
+  "loader": "forge:composite",
+  "children": {
+    "part1": {
+      "loader": "forge:obj",
+      "model": "createmilitary_support:models/item/nuclear_bomb.obj",
+      "emissive_ambient": true,
+      "textures": {
+        "#m_a7c8f500-724f-fd49-9415-2f4bdbb3ba2c": "createmilitary_support:block/"
+      }
+    }
+  },
+  "textures": {
+    "particle": "createmilitary_support:block/nuclear_bomb_texture"
+  },
+  "render_type": "solid"
+}

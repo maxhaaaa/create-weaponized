@@ -10,6 +10,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
+import net.mcreator.createmilitarysupport.block.TestNukeBlock;
 import net.mcreator.createmilitarysupport.block.SenderblockBlock;
 import net.mcreator.createmilitarysupport.block.RivetpressBlock;
 import net.mcreator.createmilitarysupport.block.ComponentteleporterBlock;
@@ -24,6 +25,7 @@ public class CreatemilitarySupportModBlocks {
 	public static final RegistryObject<Block> RIVETPRESS = REGISTRY.register("rivetpress", () -> new RivetpressBlock());
 	public static final RegistryObject<Block> BOMB_CRAFTER = REGISTRY.register("bomb_crafter", () -> new BombCrafterBlock());
 	public static final RegistryObject<Block> BOMBTESTINGBLOCK = REGISTRY.register("bombtestingblock", () -> new BombtestingblockBlock());
+	public static final RegistryObject<Block> TEST_NUKE = REGISTRY.register("test_nuke", () -> new TestNukeBlock());
 	// Start of user code block custom blocks
 	// End of user code block custom blocks
 }

@@ -25,5 +25,22 @@
         "stream": false
       }
     ]
+  },
+  "impact_beforeboomthenboom": {
+    "subtitle": "subtitles.impact_beforeboomthenboom",
+    "sounds": [
+      {
+        "name": "createmilitary_support:hitthenboom",
+        "stream": false
+      }
+    ]
+  },
+  "updated_nuke_noise": {
+    "sounds": [
+      {
+        "name": "createmilitary_support:streaming-nuclear-explosion-in-the-distance-tomas-herudek-1-00-14",
+        "stream": false
+      }
+    ]
   }
 }

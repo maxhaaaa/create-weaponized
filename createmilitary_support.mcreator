@@ -8,8 +8,8 @@
       "registry_name": "anassembly_ofcomponents",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/anassembly_ofcomponents.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/AnassemblyOfcomponentsItem.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/AnassemblyOfcomponentsItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/anassembly_ofcomponents.json"
         ]
       },
       "path": "~/tycoon/components"
@@ -23,8 +23,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/network/ComponenttelporterguiButtonMessage.java",
-          "src/main/java/net/mcreator/createmilitarysupport/client/gui/ComponenttelporterguiScreen.java",
-          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/ComponenttelporterguiMenu.java"
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/ComponenttelporterguiMenu.java",
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/ComponenttelporterguiScreen.java"
         ]
       },
       "path": "~/tycoon"
@@ -109,8 +109,8 @@
       "registry_name": "level_1plate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/Level1plateItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/level_1plate.json"
+          "src/main/resources/assets/createmilitary_support/models/item/level_1plate.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level1plateItem.java"
         ]
       },
       "path": "~/tycoon/components/reinforced_plate"
@@ -250,8 +250,8 @@
       "registry_name": "militarycurrencycard",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/MilitarycurrencycardItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/militarycurrencycard.json"
+          "src/main/resources/assets/createmilitary_support/models/item/militarycurrencycard.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/MilitarycurrencycardItem.java"
         ]
       },
       "path": "~/tycoon"
@@ -713,9 +713,9 @@
       "registry_name": "loopertest",
       "metadata": {
         "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/loopertest.json",
           "src/main/java/net/mcreator/createmilitarysupport/item/renderer/LoopertestItemRenderer.java",
           "src/main/java/net/mcreator/createmilitarysupport/item/LoopertestItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/loopertest.json",
           "src/main/java/net/mcreator/createmilitarysupport/item/model/LoopertestItemModel.java"
         ]
       },
@@ -907,8 +907,8 @@
       "registry_name": "sc_500punchcard",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/Sc500punchcardItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/sc_500punchcard.json"
+          "src/main/resources/assets/createmilitary_support/models/item/sc_500punchcard.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Sc500punchcardItem.java"
         ]
       },
       "path": "~/military/strike_device/punch_cards_striker"
@@ -1235,8 +1235,8 @@
       "registry_name": "nuclearfire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/particles/nuclearfire.json",
-          "src/main/java/net/mcreator/createmilitarysupport/client/particle/NuclearfireParticle.java"
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/NuclearfireParticle.java",
+          "src/main/resources/assets/createmilitary_support/particles/nuclearfire.json"
         ]
       },
       "path": "~/military/strike_device"
@@ -1625,8 +1625,8 @@
       "registry_name": "bullet_9mmcasing",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmcasingItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmcasing.json"
+          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmcasing.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmcasingItem.java"
         ]
       },
       "path": "~/tycoon/components/bullet/9mm"
@@ -1884,8 +1884,8 @@
       "registry_name": "rcxdcards",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/RcxdcardsItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/rcxdcards.json"
+          "src/main/resources/assets/createmilitary_support/models/item/rcxdcards.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/RcxdcardsItem.java"
         ]
       },
       "path": "~/military/strike_device/punch_cards_striker"
@@ -2562,6 +2562,187 @@
         ]
       },
       "path": "~/BeavTests"
+    },
+    {
+      "name": "DebugRightclicked",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "debug_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/DebugRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Explosionsmoke",
+      "type": "particle",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explosionsmoke",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/particles/explosionsmoke.json",
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/ExplosionsmokeParticle.java"
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Mushroomcloudpart1",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroomcloudpart_1",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Mushroomcloudpart1Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Mushroomcloudpart2",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroomcloudpart_2",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/Mushroomcloudpart2Procedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "Mushroomfunctions",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mushroomfunctions",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/MushroomfunctionsProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "BombtestingblockBlockDestroyedByExplosion",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "bombtestingblock_block_destroyed_by_explosion",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/BombtestingblockBlockDestroyedByExplosionProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/basics in bombs_Testing grounds/particles"
+    },
+    {
+      "name": "TestNuke",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "test_nuke",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/test_nuke.json",
+          "src/main/resources/assets/createmilitary_support/models/block/test_nuke.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/TestNukeBlock.java",
+          "src/main/resources/assets/createmilitary_support/blockstates/test_nuke.json",
+          "src/main/resources/data/createmilitary_support/loot_tables/blocks/test_nuke.json"
+        ]
+      },
+      "path": "~/P51s Tests"
     }
   ],
   "variable_elements": [],
@@ -2589,6 +2770,22 @@
       ],
       "category": "master",
       "subtitle": "a nuclear bomb"
+    },
+    {
+      "name": "impact_beforeboomthenboom",
+      "files": [
+        "hitthenboom"
+      ],
+      "category": "master",
+      "subtitle": "used for bombs lol"
+    },
+    {
+      "name": "updated_nuke_noise",
+      "files": [
+        "streaming-nuclear-explosion-in-the-distance-tomas-herudek-1-00-14"
+      ],
+      "category": "master",
+      "subtitle": ""
     }
   ],
   "tag_elements": {
@@ -2694,6 +2891,14 @@
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "testings",
+        "children": []
+      },
+      {
+        "name": "P51s Tests",
+        "children": []
+      },
       {
         "name": "military",
         "children": [

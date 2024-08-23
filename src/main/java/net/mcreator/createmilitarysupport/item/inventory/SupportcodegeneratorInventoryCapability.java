@@ -1,28 +1,6 @@
 
 package net.mcreator.createmilitarysupport.item.inventory;
 
-import net.minecraftforge.items.ItemStackHandler;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.entity.item.ItemTossEvent;
-import net.minecraftforge.common.util.LazyOptional;
-import net.minecraftforge.common.capabilities.ICapabilitySerializable;
-import net.minecraftforge.common.capabilities.ForgeCapabilities;
-import net.minecraftforge.common.capabilities.Capability;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.nbt.CompoundTag;
-import net.minecraft.core.Direction;
-import net.minecraft.client.Minecraft;
-
-import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModItems;
-import net.mcreator.createmilitarysupport.client.gui.SupportCodegeneratorguiScreen;
-
-import javax.annotation.Nullable;
-import javax.annotation.Nonnull;
-
 @Mod.EventBusSubscriber(Dist.CLIENT)
 public class SupportcodegeneratorInventoryCapability implements ICapabilitySerializable<CompoundTag> {
 	@SubscribeEvent

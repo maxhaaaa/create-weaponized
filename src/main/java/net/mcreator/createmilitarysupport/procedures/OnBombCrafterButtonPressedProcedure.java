@@ -1,14 +1,6 @@
 package net.mcreator.createmilitarysupport.procedures;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.inventory.Slot;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-
-import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModItems;
-
-import java.util.function.Supplier;
-import java.util.Map;
+import net.minecraftforge.eventbus.api.Event;
 
 public class OnBombCrafterButtonPressedProcedure {
 	public static void execute(Entity entity) {

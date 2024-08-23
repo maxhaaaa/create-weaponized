@@ -1,20 +1,6 @@
 
 package net.mcreator.createmilitarysupport.client.particle;
 
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.api.distmarker.Dist;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.core.particles.SimpleParticleType;
-import net.minecraft.client.particle.TextureSheetParticle;
-import net.minecraft.client.particle.SpriteSet;
-import net.minecraft.client.particle.ParticleRenderType;
-import net.minecraft.client.particle.ParticleProvider;
-import net.minecraft.client.particle.Particle;
-import net.minecraft.client.multiplayer.ClientLevel;
-
-import net.mcreator.createmilitarysupport.procedures.BasicsinbombsexplosionFire1ParticleVisualScaleProcedure;
-
 @OnlyIn(Dist.CLIENT)
 public class BasicsinbombsexplosionFire1Particle extends TextureSheetParticle {
 	public static BasicsinbombsexplosionFire1ParticleProvider provider(SpriteSet spriteSet) {
@@ -40,7 +26,7 @@ public class BasicsinbombsexplosionFire1Particle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 		this.lifetime = (int) Math.max(1, 200 + (this.random.nextInt(400) - 200));
-		this.gravity = 0f;
+		this.gravity = -1f;
 		this.hasPhysics = true;
 		this.xd = vx * 1;
 		this.yd = vy * 1;

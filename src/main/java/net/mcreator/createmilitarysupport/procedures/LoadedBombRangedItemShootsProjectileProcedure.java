@@ -1,7 +1,6 @@
 package net.mcreator.createmilitarysupport.procedures;
 
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
 public class LoadedBombRangedItemShootsProjectileProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {

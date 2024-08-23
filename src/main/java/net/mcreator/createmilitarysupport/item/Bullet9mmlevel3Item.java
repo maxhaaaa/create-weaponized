@@ -1,8 +1,7 @@
 
 package net.mcreator.createmilitarysupport.item;
 
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class Bullet9mmlevel3Item extends Item {
 	public Bullet9mmlevel3Item() {

@@ -36,7 +36,7 @@ public class BuzzFlashParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.quadSize *= 200f;
+		this.quadSize *= 1000f;
 		this.lifetime = (int) Math.max(1, 100 + (this.random.nextInt(200) - 100));
 		this.gravity = 0f;
 		this.hasPhysics = false;

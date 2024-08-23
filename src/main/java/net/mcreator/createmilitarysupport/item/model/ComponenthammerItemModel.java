@@ -1,11 +1,5 @@
 package net.mcreator.createmilitarysupport.item.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.createmilitarysupport.item.ComponenthammerItem;
-
 public class ComponenthammerItemModel extends GeoModel<ComponenthammerItem> {
 	@Override
 	public ResourceLocation getAnimationResource(ComponenthammerItem animatable) {

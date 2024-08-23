@@ -14,6 +14,7 @@ import net.mcreator.createmilitarysupport.client.particle.NuclearsmokeParticle;
 import net.mcreator.createmilitarysupport.client.particle.NuclearfireeParticle;
 import net.mcreator.createmilitarysupport.client.particle.NuclearfireParticle;
 import net.mcreator.createmilitarysupport.client.particle.FireParticle;
+import net.mcreator.createmilitarysupport.client.particle.ExplosionsmokeParticle;
 import net.mcreator.createmilitarysupport.client.particle.BuzzFlashParticle;
 import net.mcreator.createmilitarysupport.client.particle.BasicsinbombsexplosionorangeParticle;
 import net.mcreator.createmilitarysupport.client.particle.BasicsinbombsexplosionFire1Particle;
@@ -30,5 +31,6 @@ public class CreatemilitarySupportModParticles {
 		event.registerSpriteSet(CreatemilitarySupportModParticleTypes.BASICSINBOMBSEXPLOSION_FIRE_1.get(), BasicsinbombsexplosionFire1Particle::provider);
 		event.registerSpriteSet(CreatemilitarySupportModParticleTypes.BASICSINBOMBSEXPLOSIONORANGE.get(), BasicsinbombsexplosionorangeParticle::provider);
 		event.registerSpriteSet(CreatemilitarySupportModParticleTypes.BUZZ_FLASH.get(), BuzzFlashParticle::provider);
+		event.registerSpriteSet(CreatemilitarySupportModParticleTypes.EXPLOSIONSMOKE.get(), ExplosionsmokeParticle::provider);
 	}
 }

@@ -106,6 +106,7 @@ public class CreatemilitarySupportModItems {
 	public static final RegistryObject<Item> BOMB_EXPLOSION_RADIUS = REGISTRY.register("bomb_explosion_radius", () -> new BombExplosionRadiusItem());
 	public static final RegistryObject<Item> BOMB_CRAFTER = block(CreatemilitarySupportModBlocks.BOMB_CRAFTER);
 	public static final RegistryObject<Item> BOMBTESTINGBLOCK = block(CreatemilitarySupportModBlocks.BOMBTESTINGBLOCK);
+	public static final RegistryObject<Item> TEST_NUKE = block(CreatemilitarySupportModBlocks.TEST_NUKE);
 
 	// Start of user code block custom items
 	// End of user code block custom items

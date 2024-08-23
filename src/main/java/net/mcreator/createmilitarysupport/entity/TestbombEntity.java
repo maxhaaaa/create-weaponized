@@ -20,7 +20,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.createmilitarysupport.procedures.MushroombasicsinbombsProcedure;
+import net.mcreator.createmilitarysupport.procedures.MushroomfunctionsProcedure;
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModItems;
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModEntities;
 
@@ -69,7 +69,7 @@ public class TestbombEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		MushroombasicsinbombsProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		MushroomfunctionsProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override

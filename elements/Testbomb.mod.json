@@ -16,7 +16,7 @@
     "entityModel": "Modelbomb",
     "customModelTexture": "bomb.png",
     "onHitsBlock": {
-      "name": "Mushroombasicsinbombs"
+      "name": "Mushroomfunctions"
     }
   }
 }

@@ -12,7 +12,7 @@
       "name": "BasicsinbombsexplosionFire1ParticleVisualScale"
     },
     "speedFactor": 1.0,
-    "gravity": 0.0,
+    "gravity": -1.0,
     "maxAge": 200,
     "maxAgeDiff": 200,
     "angularVelocity": 0.0,

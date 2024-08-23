@@ -64,6 +64,8 @@ public class CreatemilitarySupportModTabs {
 				tabData.accept(CreatemilitarySupportModItems.BOMB_EXPLOSION_AMOUNT.get());
 				tabData.accept(CreatemilitarySupportModItems.BOMB_EXPLOSION_RADIUS.get());
 				tabData.accept(CreatemilitarySupportModBlocks.BOMB_CRAFTER.get().asItem());
+				tabData.accept(CreatemilitarySupportModBlocks.BOMBTESTINGBLOCK.get().asItem());
+				tabData.accept(CreatemilitarySupportModBlocks.TEST_NUKE.get().asItem());
 			})
 
 					.build());

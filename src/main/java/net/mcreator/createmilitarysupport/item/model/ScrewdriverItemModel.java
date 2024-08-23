@@ -1,11 +1,5 @@
 package net.mcreator.createmilitarysupport.item.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.createmilitarysupport.item.ScrewdriverItem;
-
 public class ScrewdriverItemModel extends GeoModel<ScrewdriverItem> {
 	@Override
 	public ResourceLocation getAnimationResource(ScrewdriverItem animatable) {

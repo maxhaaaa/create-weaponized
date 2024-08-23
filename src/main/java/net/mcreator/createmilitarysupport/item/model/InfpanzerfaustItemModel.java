@@ -1,11 +1,5 @@
 package net.mcreator.createmilitarysupport.item.model;
 
-import software.bernie.geckolib.model.GeoModel;
-
-import net.minecraft.resources.ResourceLocation;
-
-import net.mcreator.createmilitarysupport.item.InfpanzerfaustItem;
-
 public class InfpanzerfaustItemModel extends GeoModel<InfpanzerfaustItem> {
 	@Override
 	public ResourceLocation getAnimationResource(InfpanzerfaustItem animatable) {

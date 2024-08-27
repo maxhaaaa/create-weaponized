@@ -1,0 +1,208 @@
+{
+  "_fv": 66,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 287,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "name": "label_launcher_block_x",
+          "text": {
+            "fixedValue": "launcher block x:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 75,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_launcherblocklocatex",
+          "text": {
+            "fixedValue": "",
+            "name": "Launcherblocklocatex"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 170,
+          "y": 45
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_launcher_block_y",
+          "text": {
+            "fixedValue": "launcher block y:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 75,
+          "y": 62
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_strikelauncherblockylocate",
+          "text": {
+            "fixedValue": "",
+            "name": "Strikelauncherblockylocate"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 167,
+          "y": 63
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_launcher_block_z",
+          "text": {
+            "fixedValue": "launcher block z:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 75,
+          "y": 80
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_launcherblocklocatez",
+          "text": {
+            "fixedValue": "",
+            "name": "Launcherblocklocatez"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 169,
+          "y": 81
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_target_cords_x",
+          "text": {
+            "fixedValue": "target cords x:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 76,
+          "y": 100
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_lookinglocation_x",
+          "text": {
+            "fixedValue": "",
+            "name": "LookinglocationX"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 168,
+          "y": 102
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_target_cords_y",
+          "text": {
+            "fixedValue": "target cords y:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 73,
+          "y": 119
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_lookinglocationz",
+          "text": {
+            "fixedValue": "target cords z",
+            "name": "Lookinglocationz"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 173,
+          "y": 143
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_target_cords_z",
+          "text": {
+            "fixedValue": "target cords z:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 78,
+          "y": 144
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_proc_lookinglocationy",
+          "text": {
+            "fixedValue": "",
+            "name": "Lookinglocationy"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 166,
+          "y": 122
+        }
+      }
+    ],
+    "gridSettings": {
+      "sx": 18,
+      "sy": 18,
+      "ox": 11,
+      "oy": 15,
+      "snapOnGrid": false
+    }
+  }
+}

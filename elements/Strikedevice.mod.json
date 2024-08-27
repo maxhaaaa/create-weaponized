@@ -38,7 +38,10 @@
     "inventorySize": 1,
     "inventoryStackSize": 1,
     "onRightClickedInAir": {
-      "name": "StrikedeviceRightclicked"
+      "name": "StrikedeviceRightclicked_new"
+    },
+    "onRightClickedOnBlock": {
+      "name": "StrikedeviceRightclickedOnBlock"
     },
     "enableRanged": false,
     "shootConstantly": false,

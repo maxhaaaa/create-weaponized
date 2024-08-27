@@ -17,8 +17,8 @@ import net.mcreator.createmilitarysupport.client.model.ModelCustomModel;
 public class CreatemilitarySupportModModels {
 	@SubscribeEvent
 	public static void registerLayerDefinitions(EntityRenderersEvent.RegisterLayerDefinitions event) {
-		event.registerLayerDefinition(Modelbomb.LAYER_LOCATION, Modelbomb::createBodyLayer);
 		event.registerLayerDefinition(ModelCustomModel.LAYER_LOCATION, ModelCustomModel::createBodyLayer);
+		event.registerLayerDefinition(Modelbomb.LAYER_LOCATION, Modelbomb::createBodyLayer);
 		event.registerLayerDefinition(Modelpz_roket.LAYER_LOCATION, Modelpz_roket::createBodyLayer);
 	}
 }

@@ -13,6 +13,8 @@ import net.minecraft.client.gui.screens.MenuScreens;
 
 import net.mcreator.createmilitarysupport.client.gui.SupportCodegeneratorguiScreen;
 import net.mcreator.createmilitarysupport.client.gui.StrikeguiScreen;
+import net.mcreator.createmilitarysupport.client.gui.StrikedevicenewguiScreen;
+import net.mcreator.createmilitarysupport.client.gui.SiloguiScreen;
 import net.mcreator.createmilitarysupport.client.gui.SenderblockguiScreen;
 import net.mcreator.createmilitarysupport.client.gui.ComponenttelporterguiScreen;
 import net.mcreator.createmilitarysupport.client.gui.BombCrafterGUIScreen;
@@ -27,6 +29,8 @@ public class CreatemilitarySupportModScreens {
 			MenuScreens.register(CreatemilitarySupportModMenus.STRIKEGUI.get(), StrikeguiScreen::new);
 			MenuScreens.register(CreatemilitarySupportModMenus.SUPPORT_CODEGENERATORGUI.get(), SupportCodegeneratorguiScreen::new);
 			MenuScreens.register(CreatemilitarySupportModMenus.BOMB_CRAFTER_GUI.get(), BombCrafterGUIScreen::new);
+			MenuScreens.register(CreatemilitarySupportModMenus.SILOGUI.get(), SiloguiScreen::new);
+			MenuScreens.register(CreatemilitarySupportModMenus.STRIKEDEVICENEWGUI.get(), StrikedevicenewguiScreen::new);
 		});
 	}
 }

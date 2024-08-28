@@ -42,7 +42,7 @@ public class Mushroomcloudpart1Procedure {
 							(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.01, 0);
 					loop = loop + 1;
 				}
-				yheight = yheight + 1;
+				yheight = yheight + 0.05;
 				loop = 0;
 				if (increase == 4) {
 					particleAmount = particleAmount + 2;
@@ -50,8 +50,8 @@ public class Mushroomcloudpart1Procedure {
 				} else {
 					increase = increase + 1;
 				}
-				xRadius = xRadius + 1;
-				zRadius = zRadius + 1;
+				xRadius = xRadius * 0.5;
+				zRadius = zRadius * 0.5;
 			}
 		}
 		for (int index3 = 0; index3 < (int) sphereloop; index3++) {
@@ -61,7 +61,7 @@ public class Mushroomcloudpart1Procedure {
 							(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.01, 0);
 					loop = loop + 1;
 				}
-				yheight = yheight * 1.5;
+				yheight = yheight + 0.05;
 				loop = 0;
 				if (increase == 4) {
 					particleAmount = particleAmount + 2;
@@ -69,8 +69,8 @@ public class Mushroomcloudpart1Procedure {
 				} else {
 					increase = increase + 1;
 				}
-				xRadius = xRadius - 1;
-				zRadius = zRadius - 1;
+				xRadius = xRadius / 0.5;
+				zRadius = zRadius / 0.5;
 			}
 		}
 	}

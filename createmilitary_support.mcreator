@@ -8,8 +8,8 @@
       "registry_name": "anassembly_ofcomponents",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/anassembly_ofcomponents.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/AnassemblyOfcomponentsItem.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/AnassemblyOfcomponentsItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/anassembly_ofcomponents.json"
         ]
       },
       "path": "~/tycoon/components"
@@ -23,8 +23,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/network/ComponenttelporterguiButtonMessage.java",
-          "src/main/java/net/mcreator/createmilitarysupport/client/gui/ComponenttelporterguiScreen.java",
-          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/ComponenttelporterguiMenu.java"
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/ComponenttelporterguiMenu.java",
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/ComponenttelporterguiScreen.java"
         ]
       },
       "path": "~/tycoon"
@@ -109,8 +109,8 @@
       "registry_name": "level_1plate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/Level1plateItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/level_1plate.json"
+          "src/main/resources/assets/createmilitary_support/models/item/level_1plate.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level1plateItem.java"
         ]
       },
       "path": "~/tycoon/components/reinforced_plate"
@@ -250,8 +250,8 @@
       "registry_name": "militarycurrencycard",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/MilitarycurrencycardItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/militarycurrencycard.json"
+          "src/main/resources/assets/createmilitary_support/models/item/militarycurrencycard.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/MilitarycurrencycardItem.java"
         ]
       },
       "path": "~/tycoon"
@@ -713,9 +713,9 @@
       "registry_name": "loopertest",
       "metadata": {
         "files": [
+          "src/main/resources/assets/createmilitary_support/models/item/loopertest.json",
           "src/main/java/net/mcreator/createmilitarysupport/item/renderer/LoopertestItemRenderer.java",
           "src/main/java/net/mcreator/createmilitarysupport/item/LoopertestItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/loopertest.json",
           "src/main/java/net/mcreator/createmilitarysupport/item/model/LoopertestItemModel.java"
         ]
       },
@@ -907,8 +907,8 @@
       "registry_name": "sc_500punchcard",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/Sc500punchcardItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/sc_500punchcard.json"
+          "src/main/resources/assets/createmilitary_support/models/item/sc_500punchcard.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Sc500punchcardItem.java"
         ]
       },
       "path": "~/military/strike_device/punch_cards_striker"
@@ -1235,8 +1235,8 @@
       "registry_name": "nuclearfire",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/particles/nuclearfire.json",
-          "src/main/java/net/mcreator/createmilitarysupport/client/particle/NuclearfireParticle.java"
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/NuclearfireParticle.java",
+          "src/main/resources/assets/createmilitary_support/particles/nuclearfire.json"
         ]
       },
       "path": "~/military/strike_device"
@@ -1625,8 +1625,8 @@
       "registry_name": "bullet_9mmcasing",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmcasingItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmcasing.json"
+          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmcasing.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmcasingItem.java"
         ]
       },
       "path": "~/tycoon/components/bullet/9mm"
@@ -1884,8 +1884,8 @@
       "registry_name": "rcxdcards",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/RcxdcardsItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/rcxdcards.json"
+          "src/main/resources/assets/createmilitary_support/models/item/rcxdcards.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/RcxdcardsItem.java"
         ]
       },
       "path": "~/military/strike_device/punch_cards_striker"
@@ -2743,6 +2743,270 @@
         ]
       },
       "path": "~/P51s Tests"
+    },
+    {
+      "name": "Lookinglocationy",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lookinglocationy",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/LookinglocationyProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
+    },
+    {
+      "name": "LookinglocationX",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lookinglocation_x",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/LookinglocationXProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
+    },
+    {
+      "name": "Silotester",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silotester",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/createmilitary_support/loot_tables/blocks/silotester.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/SilotesterBlock.java",
+          "src/main/resources/assets/createmilitary_support/blockstates/silotester.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/SilotesterBlockEntity.java",
+          "src/main/resources/assets/createmilitary_support/models/item/silotester.json",
+          "src/main/resources/assets/createmilitary_support/models/block/silotester.json"
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
+    },
+    {
+      "name": "Lookinglocationz",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "lookinglocationz",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/LookinglocationzProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
+    },
+    {
+      "name": "StrikedeviceRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strikedevice_rightclicked_on_block",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/StrikedeviceRightclickedOnBlockProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "Launcherblocklocatez",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launcherblocklocatez",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/LauncherblocklocatezProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
+    },
+    {
+      "name": "YCORDSOFBOMB",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ycordsofbomb",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/YCORDSOFBOMBProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
+    },
+    {
+      "name": "StrikedeviceRightclicked_new",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strikedevice_rightclicked_new",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/StrikedeviceRightclicked_newProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/military/strike_device"
+    },
+    {
+      "name": "Strikelauncherblockylocate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strikelauncherblockylocate",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/StrikelauncherblockylocateProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
+    },
+    {
+      "name": "Launcherblocklocatex",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "launcherblocklocatex",
+      "metadata": {
+        "return_type": "string",
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/LauncherblocklocatexProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
+    },
+    {
+      "name": "Silogui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "silogui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/SiloguiScreen.java",
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/SiloguiMenu.java"
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
+    },
+    {
+      "name": "Strikedevicenewgui",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "strikedevicenewgui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/StrikedevicenewguiScreen.java",
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/StrikedevicenewguiMenu.java"
+        ]
+      },
+      "path": "~/military/strike_device/gui for strike device"
     }
   ],
   "variable_elements": [],
@@ -2853,13 +3117,17 @@
       "item.createmilitary_support.bomb_explosion_amount": "Bomb Explosion Amount",
       "death.attack.obliterated.item": "%1$s was deatomised by %2$s using %3$s",
       "item.createmilitary_support.constructable_250level_2": "Construcables 250",
+      "gui.createmilitary_support.silogui.label_in_progress": "IN PROGRESS",
       "entity.createmilitary_support.soldierfire": "Soldierfire",
-      "block.createmilitary_support.test_nuke": "Test Nuke",
+      "block.createmilitary_support.silotester": "Silotester",
       "block.createmilitary_support.rivetpress": "Rivetpress",
       "item.createmilitary_support.rcxd_spawn_egg": "Rcxd Spawn Egg",
       "item.createmilitary_support.missle_57": "Missle 5 7",
       "death.attack.obliterated.player": "%1$s died trying to outrun a missle shot from %2$s",
+      "gui.createmilitary_support.strikedevicenewgui.label_target_cords_y": "target cords y:",
       "item.createmilitary_support.nuclearmortar": "Nuclearmortar",
+      "gui.createmilitary_support.strikedevicenewgui.label_target_cords_x": "target cords x:",
+      "gui.createmilitary_support.strikedevicenewgui.label_target_cords_z": "target cords z:",
       "item.createmilitary_support.he_57card": "He 57 card",
       "item.createmilitary_support.headbullet": "bullet",
       "item_group.createmilitary_support.militarysupport": "Military support",
@@ -2884,8 +3152,11 @@
       "subtitles.bullet_hit_2": "poof",
       "item.createmilitary_support.construcables_250": "Construcables 250",
       "item.createmilitary_support.nukecard": "Nuke card",
+      "gui.createmilitary_support.strikedevicenewgui.label_launcher_block_y": "launcher block y:",
+      "gui.createmilitary_support.strikedevicenewgui.label_launcher_block_z": "launcher block z:",
       "item.createmilitary_support.level_3plate": "unfinished plate",
       "biome.createmilitary_support.nomansland": "Nomansland",
+      "gui.createmilitary_support.strikedevicenewgui.label_launcher_block_x": "launcher block x:",
       "item.createmilitary_support.debug": "Debug"
     }
   },
@@ -2904,6 +3175,10 @@
         "name": "military",
         "children": [
           {
+            "name": "BeavTests",
+            "children": []
+          },
+          {
             "name": "strike_device",
             "children": [
               {
@@ -2920,6 +3195,10 @@
               },
               {
                 "name": "indecary",
+                "children": []
+              },
+              {
+                "name": "gui for strike device",
                 "children": []
               },
               {
@@ -3022,10 +3301,6 @@
       },
       {
         "name": "huds",
-        "children": []
-      },
-      {
-        "name": "BeavTests",
         "children": []
       },
       {

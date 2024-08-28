@@ -107,6 +107,7 @@ public class CreatemilitarySupportModItems {
 	public static final RegistryObject<Item> BOMB_CRAFTER = block(CreatemilitarySupportModBlocks.BOMB_CRAFTER);
 	public static final RegistryObject<Item> BOMBTESTINGBLOCK = block(CreatemilitarySupportModBlocks.BOMBTESTINGBLOCK);
 	public static final RegistryObject<Item> TEST_NUKE = block(CreatemilitarySupportModBlocks.TEST_NUKE);
+	public static final RegistryObject<Item> SILOTESTER = block(CreatemilitarySupportModBlocks.SILOTESTER);
 
 	// Start of user code block custom items
 	// End of user code block custom items

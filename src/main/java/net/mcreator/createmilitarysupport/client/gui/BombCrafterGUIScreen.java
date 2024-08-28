@@ -1,13 +1,27 @@
 package net.mcreator.createmilitarysupport.client.gui;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
+
+import net.mcreator.createmilitarysupport.world.inventory.BombCrafterGUIMenu;
+import net.mcreator.createmilitarysupport.network.BombCrafterGUIButtonMessage;
+import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
+
+import java.util.HashMap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+
 public class BombCrafterGUIScreen extends AbstractContainerScreen<BombCrafterGUIMenu> {
-
 	private final static HashMap<String, Object> guistate = BombCrafterGUIMenu.guistate;
-
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-
 	Button button_craft;
 
 	public BombCrafterGUIScreen(BombCrafterGUIMenu container, Inventory inventory, Component text) {
@@ -26,11 +40,8 @@ public class BombCrafterGUIScreen extends AbstractContainerScreen<BombCrafterGUI
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
-
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-
 	}
 
 	@Override
@@ -38,7 +49,6 @@ public class BombCrafterGUIScreen extends AbstractContainerScreen<BombCrafterGUI
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
 
 		guiGraphics.blit(new ResourceLocation("createmilitary_support:textures/screens/cog_image.png"), this.leftPos + 123, this.topPos + 43, 0, 0, 32, 32, 32, 32);
@@ -52,7 +62,6 @@ public class BombCrafterGUIScreen extends AbstractContainerScreen<BombCrafterGUI
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-
 		return super.keyPressed(key, b, c);
 	}
 
@@ -63,17 +72,13 @@ public class BombCrafterGUIScreen extends AbstractContainerScreen<BombCrafterGUI
 	@Override
 	public void init() {
 		super.init();
-
 		button_craft = Button.builder(Component.translatable("gui.createmilitary_support.bomb_crafter_gui.button_craft"), e -> {
 			if (true) {
 				CreatemilitarySupportMod.PACKET_HANDLER.sendToServer(new BombCrafterGUIButtonMessage(0, x, y, z));
 				BombCrafterGUIButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 114, this.topPos + 16, 51, 20).build();
-
 		guistate.put("button:button_craft", button_craft);
 		this.addRenderableWidget(button_craft);
-
 	}
-
 }

@@ -43,6 +43,7 @@
   "death.attack.obliterated.item": "%1$s was deatomised by %2$s using %3$s",
   "item.createmilitary_support.constructable_250level_2": "Construcables 250",
   "entity.createmilitary_support.soldierfire": "Soldierfire",
+  "block.createmilitary_support.test_nuke": "Test Nuke",
   "block.createmilitary_support.rivetpress": "Rivetpress",
   "item.createmilitary_support.rcxd_spawn_egg": "Rcxd Spawn Egg",
   "item.createmilitary_support.missle_57": "Missle 5 7",

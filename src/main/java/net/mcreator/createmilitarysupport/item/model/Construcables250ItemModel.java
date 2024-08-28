@@ -1,5 +1,11 @@
 package net.mcreator.createmilitarysupport.item.model;
 
+import software.bernie.geckolib.model.GeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.createmilitarysupport.item.Construcables250Item;
+
 public class Construcables250ItemModel extends GeoModel<Construcables250Item> {
 	@Override
 	public ResourceLocation getAnimationResource(Construcables250Item animatable) {

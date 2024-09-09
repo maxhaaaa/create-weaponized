@@ -1,5 +1,11 @@
 package net.mcreator.createmilitarysupport.item.model;
 
+import software.bernie.geckolib.model.GeoModel;
+
+import net.minecraft.resources.ResourceLocation;
+
+import net.mcreator.createmilitarysupport.item.SuperleinfeildItem;
+
 public class SuperleinfeildItemModel extends GeoModel<SuperleinfeildItem> {
 	@Override
 	public ResourceLocation getAnimationResource(SuperleinfeildItem animatable) {

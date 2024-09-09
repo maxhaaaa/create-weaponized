@@ -1,11 +1,42 @@
 
 package net.mcreator.createmilitarysupport.block;
 
-import net.minecraft.sounds.SoundEvent;
-import net.minecraft.world.level.block.state.BlockBehaviour.Properties;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.phys.shapes.VoxelShape;
+import net.minecraft.world.phys.shapes.CollisionContext;
+import net.minecraft.world.level.storage.loot.LootParams;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.BlockStateProperties;
+import net.minecraft.world.level.block.state.StateDefinition;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.Rotation;
+import net.minecraft.world.level.block.RenderShape;
+import net.minecraft.world.level.block.EntityBlock;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.BaseEntityBlock;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.item.context.BlockPlaceContext;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.createmilitarysupport.procedures.RivetpressOnTickUpdateProcedure;
+import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModBlockEntities;
+import net.mcreator.createmilitarysupport.block.entity.RivetpressTileEntity;
 
 import javax.annotation.Nullable;
+
+import java.util.List;
+import java.util.Collections;
 
 public class RivetpressBlock extends BaseEntityBlock implements EntityBlock {
 	public static final IntegerProperty ANIMATION = IntegerProperty.create("animation", 0, (int) 2);
@@ -13,7 +44,6 @@ public class RivetpressBlock extends BaseEntityBlock implements EntityBlock {
 
 	public RivetpressBlock() {
 		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(1f, 10f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-
 		this.registerDefaultState(this.stateDefinition.any().setValue(AXIS, Direction.Axis.Y));
 	}
 
@@ -72,7 +102,6 @@ public class RivetpressBlock extends BaseEntityBlock implements EntityBlock {
 
 	@Override
 	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
-
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
@@ -93,7 +122,6 @@ public class RivetpressBlock extends BaseEntityBlock implements EntityBlock {
 		int z = pos.getZ();
 
 		RivetpressOnTickUpdateProcedure.execute(world, x, y, z);
-
 		world.scheduleTick(pos, this, 20);
 	}
 
@@ -118,7 +146,6 @@ public class RivetpressBlock extends BaseEntityBlock implements EntityBlock {
 				Containers.dropContents(world, pos, be);
 				world.updateNeighbourForOutputSignal(pos, this);
 			}
-
 			super.onRemove(state, world, pos, newState, isMoving);
 		}
 	}
@@ -136,5 +163,4 @@ public class RivetpressBlock extends BaseEntityBlock implements EntityBlock {
 		else
 			return 0;
 	}
-
 }

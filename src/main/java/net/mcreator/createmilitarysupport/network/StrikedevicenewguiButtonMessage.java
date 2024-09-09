@@ -11,41 +11,39 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.core.BlockPos;
 
-import net.mcreator.createmilitarysupport.world.inventory.SupportCodegeneratorguiMenu;
-import net.mcreator.createmilitarysupport.procedures.IncreasebuttonProcedure;
-import net.mcreator.createmilitarysupport.procedures.GeneratecardProcedure;
-import net.mcreator.createmilitarysupport.procedures.DecreasebuttonProcedure;
+import net.mcreator.createmilitarysupport.world.inventory.StrikedevicenewguiMenu;
+import net.mcreator.createmilitarysupport.procedures.LaunchibcmProcedure;
 import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
 
 import java.util.function.Supplier;
 import java.util.HashMap;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-public class SupportCodegeneratorguiButtonMessage {
+public class StrikedevicenewguiButtonMessage {
 	private final int buttonID, x, y, z;
 
-	public SupportCodegeneratorguiButtonMessage(FriendlyByteBuf buffer) {
+	public StrikedevicenewguiButtonMessage(FriendlyByteBuf buffer) {
 		this.buttonID = buffer.readInt();
 		this.x = buffer.readInt();
 		this.y = buffer.readInt();
 		this.z = buffer.readInt();
 	}
 
-	public SupportCodegeneratorguiButtonMessage(int buttonID, int x, int y, int z) {
+	public StrikedevicenewguiButtonMessage(int buttonID, int x, int y, int z) {
 		this.buttonID = buttonID;
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	public static void buffer(SupportCodegeneratorguiButtonMessage message, FriendlyByteBuf buffer) {
+	public static void buffer(StrikedevicenewguiButtonMessage message, FriendlyByteBuf buffer) {
 		buffer.writeInt(message.buttonID);
 		buffer.writeInt(message.x);
 		buffer.writeInt(message.y);
 		buffer.writeInt(message.z);
 	}
 
-	public static void handler(SupportCodegeneratorguiButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
+	public static void handler(StrikedevicenewguiButtonMessage message, Supplier<NetworkEvent.Context> contextSupplier) {
 		NetworkEvent.Context context = contextSupplier.get();
 		context.enqueueWork(() -> {
 			Player entity = context.getSender();
@@ -60,26 +58,18 @@ public class SupportCodegeneratorguiButtonMessage {
 
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
-		HashMap guistate = SupportCodegeneratorguiMenu.guistate;
+		HashMap guistate = StrikedevicenewguiMenu.guistate;
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
 		if (buttonID == 0) {
 
-			GeneratecardProcedure.execute(entity);
-		}
-		if (buttonID == 1) {
-
-			DecreasebuttonProcedure.execute(entity);
-		}
-		if (buttonID == 2) {
-
-			IncreasebuttonProcedure.execute(entity);
+			LaunchibcmProcedure.execute(world, entity);
 		}
 	}
 
 	@SubscribeEvent
 	public static void registerMessage(FMLCommonSetupEvent event) {
-		CreatemilitarySupportMod.addNetworkMessage(SupportCodegeneratorguiButtonMessage.class, SupportCodegeneratorguiButtonMessage::buffer, SupportCodegeneratorguiButtonMessage::new, SupportCodegeneratorguiButtonMessage::handler);
+		CreatemilitarySupportMod.addNetworkMessage(StrikedevicenewguiButtonMessage.class, StrikedevicenewguiButtonMessage::buffer, StrikedevicenewguiButtonMessage::new, StrikedevicenewguiButtonMessage::handler);
 	}
 }

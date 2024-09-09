@@ -6,15 +6,19 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.chat.Component;
 import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.createmilitarysupport.world.inventory.StrikedevicenewguiMenu;
+import net.mcreator.createmilitarysupport.procedures.YCORDSOFBOMBProcedure;
 import net.mcreator.createmilitarysupport.procedures.StrikelauncherblockylocateProcedure;
 import net.mcreator.createmilitarysupport.procedures.LookinglocationzProcedure;
 import net.mcreator.createmilitarysupport.procedures.LookinglocationyProcedure;
 import net.mcreator.createmilitarysupport.procedures.LookinglocationXProcedure;
 import net.mcreator.createmilitarysupport.procedures.LauncherblocklocatezProcedure;
 import net.mcreator.createmilitarysupport.procedures.LauncherblocklocatexProcedure;
+import net.mcreator.createmilitarysupport.network.StrikedevicenewguiButtonMessage;
+import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
 
 import java.util.HashMap;
 
@@ -25,6 +29,7 @@ public class StrikedevicenewguiScreen extends AbstractContainerScreen<Strikedevi
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
+	Button button_launch;
 
 	public StrikedevicenewguiScreen(StrikedevicenewguiMenu container, Inventory inventory, Component text) {
 		super(container, inventory, text);
@@ -77,23 +82,35 @@ public class StrikedevicenewguiScreen extends AbstractContainerScreen<Strikedevi
 		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.strikedevicenewgui.label_launcher_block_z"), 5, 43, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				LauncherblocklocatezProcedure.execute(entity), 99, 44, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.strikedevicenewgui.label_target_cords_x"), 6, 63, -12829636, false);
+				LauncherblocklocatezProcedure.execute(entity), 94, 43, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.strikedevicenewgui.label_target_cords_x"), 6, 57, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				LookinglocationXProcedure.execute(entity), 98, 65, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.strikedevicenewgui.label_target_cords_y"), 3, 82, -12829636, false);
+				LookinglocationXProcedure.execute(entity), 90, 57, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.strikedevicenewgui.label_target_cords_y"), 5, 72, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				LookinglocationzProcedure.execute(entity), 103, 106, -12829636, false);
-		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.strikedevicenewgui.label_target_cords_z"), 8, 107, -12829636, false);
+				LookinglocationzProcedure.execute(entity), 88, 89, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.strikedevicenewgui.label_target_cords_z"), 5, 88, -12829636, false);
 		guiGraphics.drawString(this.font,
 
-				LookinglocationyProcedure.execute(entity), 96, 85, -12829636, false);
+				LookinglocationyProcedure.execute(entity), 85, 73, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.strikedevicenewgui.label_recent_bomb_y_value"), 7, 105, -12829636, false);
+		guiGraphics.drawString(this.font,
+
+				YCORDSOFBOMBProcedure.execute(entity), 73, 106, -12829636, false);
 	}
 
 	@Override
 	public void init() {
 		super.init();
+		button_launch = Button.builder(Component.translatable("gui.createmilitary_support.strikedevicenewgui.button_launch"), e -> {
+			if (true) {
+				CreatemilitarySupportMod.PACKET_HANDLER.sendToServer(new StrikedevicenewguiButtonMessage(0, x, y, z));
+				StrikedevicenewguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
+			}
+		}).bounds(this.leftPos + 182, this.topPos + 121, 56, 20).build();
+		guistate.put("button:button_launch", button_launch);
+		this.addRenderableWidget(button_launch);
 	}
 }

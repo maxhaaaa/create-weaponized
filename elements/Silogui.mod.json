@@ -26,22 +26,6 @@
         }
       },
       {
-        "type": "label",
-        "data": {
-          "name": "label_proc_ycordsofbomb",
-          "text": {
-            "fixedValue": "",
-            "name": "YCORDSOFBOMB"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "x": 143,
-          "y": 68
-        }
-      },
-      {
         "type": "inputslot",
         "data": {
           "inputLimit": {
@@ -57,6 +41,21 @@
           "dropItemsWhenNotBound": true,
           "x": 264,
           "y": 54
+        }
+      },
+      {
+        "type": "label",
+        "data": {
+          "name": "label_bomb_sphere",
+          "text": {
+            "fixedValue": "bomb sphere:"
+          },
+          "color": {
+            "value": -12829636,
+            "falpha": 0.0
+          },
+          "x": 197,
+          "y": 58
         }
       }
     ],

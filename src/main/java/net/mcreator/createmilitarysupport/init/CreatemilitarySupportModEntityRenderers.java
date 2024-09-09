@@ -11,6 +11,7 @@ import net.minecraftforge.api.distmarker.Dist;
 
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
+import net.mcreator.createmilitarysupport.client.renderer.TestibcmRenderer;
 import net.mcreator.createmilitarysupport.client.renderer.TestbombRenderer;
 import net.mcreator.createmilitarysupport.client.renderer.SoldierfireRenderer;
 import net.mcreator.createmilitarysupport.client.renderer.RcxdRenderer;
@@ -35,5 +36,6 @@ public class CreatemilitarySupportModEntityRenderers {
 		event.registerEntityRenderer(CreatemilitarySupportModEntities.PZROCKET.get(), PzrocketRenderer::new);
 		event.registerEntityRenderer(CreatemilitarySupportModEntities.TESTBOMB.get(), TestbombRenderer::new);
 		event.registerEntityRenderer(CreatemilitarySupportModEntities.BEAV_TEST_PROJECTILE.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(CreatemilitarySupportModEntities.TESTIBCM.get(), TestibcmRenderer::new);
 	}
 }

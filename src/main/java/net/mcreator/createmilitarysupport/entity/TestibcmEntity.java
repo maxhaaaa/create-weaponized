@@ -7,8 +7,6 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.phys.EntityHitResult;
-import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -21,27 +19,27 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
-import net.mcreator.createmilitarysupport.procedures.LoadedBombRightclickedProcedure;
+import net.mcreator.createmilitarysupport.procedures.TestibcmWhileProjectileFlyingTickProcedure;
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModItems;
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModEntities;
 
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
-public class BeavTestProjectileEntity extends AbstractArrow implements ItemSupplier {
-	public static final ItemStack PROJECTILE_ITEM = new ItemStack(CreatemilitarySupportModItems.LOADED_BOMB.get());
+public class TestibcmEntity extends AbstractArrow implements ItemSupplier {
+	public static final ItemStack PROJECTILE_ITEM = new ItemStack(CreatemilitarySupportModItems.SC_500PUNCHCARD.get());
 
-	public BeavTestProjectileEntity(PlayMessages.SpawnEntity packet, Level world) {
-		super(CreatemilitarySupportModEntities.BEAV_TEST_PROJECTILE.get(), world);
+	public TestibcmEntity(PlayMessages.SpawnEntity packet, Level world) {
+		super(CreatemilitarySupportModEntities.TESTIBCM.get(), world);
 	}
 
-	public BeavTestProjectileEntity(EntityType<? extends BeavTestProjectileEntity> type, Level world) {
+	public TestibcmEntity(EntityType<? extends TestibcmEntity> type, Level world) {
 		super(type, world);
 	}
 
-	public BeavTestProjectileEntity(EntityType<? extends BeavTestProjectileEntity> type, double x, double y, double z, Level world) {
+	public TestibcmEntity(EntityType<? extends TestibcmEntity> type, double x, double y, double z, Level world) {
 		super(type, x, y, z, world);
 	}
 
-	public BeavTestProjectileEntity(EntityType<? extends BeavTestProjectileEntity> type, LivingEntity entity, Level world) {
+	public TestibcmEntity(EntityType<? extends TestibcmEntity> type, LivingEntity entity, Level world) {
 		super(type, entity, world);
 	}
 
@@ -68,34 +66,23 @@ public class BeavTestProjectileEntity extends AbstractArrow implements ItemSuppl
 	}
 
 	@Override
-	public void onHitEntity(EntityHitResult entityHitResult) {
-		super.onHitEntity(entityHitResult);
-		LoadedBombRightclickedProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), entityHitResult.getEntity());
-	}
-
-	@Override
-	public void onHitBlock(BlockHitResult blockHitResult) {
-		super.onHitBlock(blockHitResult);
-		LoadedBombRightclickedProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ(), this.getOwner());
-	}
-
-	@Override
 	public void tick() {
 		super.tick();
+		TestibcmWhileProjectileFlyingTickProcedure.execute(this.getOwner(), this);
 		if (this.inGround)
 			this.discard();
 	}
 
-	public static BeavTestProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source) {
+	public static TestibcmEntity shoot(Level world, LivingEntity entity, RandomSource source) {
 		return shoot(world, entity, source, 1f, 5, 5);
 	}
 
-	public static BeavTestProjectileEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
+	public static TestibcmEntity shoot(Level world, LivingEntity entity, RandomSource source, float pullingPower) {
 		return shoot(world, entity, source, pullingPower * 1f, 5, 5);
 	}
 
-	public static BeavTestProjectileEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
-		BeavTestProjectileEntity entityarrow = new BeavTestProjectileEntity(CreatemilitarySupportModEntities.BEAV_TEST_PROJECTILE.get(), entity, world);
+	public static TestibcmEntity shoot(Level world, LivingEntity entity, RandomSource random, float power, double damage, int knockback) {
+		TestibcmEntity entityarrow = new TestibcmEntity(CreatemilitarySupportModEntities.TESTIBCM.get(), entity, world);
 		entityarrow.shoot(entity.getViewVector(1).x, entity.getViewVector(1).y, entity.getViewVector(1).z, power * 2, 0);
 		entityarrow.setSilent(true);
 		entityarrow.setCritArrow(false);
@@ -106,8 +93,8 @@ public class BeavTestProjectileEntity extends AbstractArrow implements ItemSuppl
 		return entityarrow;
 	}
 
-	public static BeavTestProjectileEntity shoot(LivingEntity entity, LivingEntity target) {
-		BeavTestProjectileEntity entityarrow = new BeavTestProjectileEntity(CreatemilitarySupportModEntities.BEAV_TEST_PROJECTILE.get(), entity, entity.level());
+	public static TestibcmEntity shoot(LivingEntity entity, LivingEntity target) {
+		TestibcmEntity entityarrow = new TestibcmEntity(CreatemilitarySupportModEntities.TESTIBCM.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();

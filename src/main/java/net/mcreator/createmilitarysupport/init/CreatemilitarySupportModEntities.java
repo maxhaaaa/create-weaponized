@@ -17,6 +17,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
 
 import net.mcreator.createmilitarysupport.entity.TestprojectileEntity;
+import net.mcreator.createmilitarysupport.entity.TestibcmEntity;
 import net.mcreator.createmilitarysupport.entity.TestbombEntity;
 import net.mcreator.createmilitarysupport.entity.SpecialbulletEntity;
 import net.mcreator.createmilitarysupport.entity.SoldierfireEntity;
@@ -69,6 +70,8 @@ public class CreatemilitarySupportModEntities {
 			EntityType.Builder.<TestbombEntity>of(TestbombEntity::new, MobCategory.MISC).setCustomClientFactory(TestbombEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<BeavTestProjectileEntity>> BEAV_TEST_PROJECTILE = register("beav_test_projectile", EntityType.Builder.<BeavTestProjectileEntity>of(BeavTestProjectileEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(BeavTestProjectileEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<TestibcmEntity>> TESTIBCM = register("testibcm",
+			EntityType.Builder.<TestibcmEntity>of(TestibcmEntity::new, MobCategory.MISC).setCustomClientFactory(TestibcmEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 
 	private static <T extends Entity> RegistryObject<EntityType<T>> register(String registryname, EntityType.Builder<T> entityTypeBuilder) {
 		return REGISTRY.register(registryname, () -> (EntityType<T>) entityTypeBuilder.build(registryname));

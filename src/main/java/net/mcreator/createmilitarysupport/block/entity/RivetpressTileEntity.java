@@ -1,9 +1,44 @@
 package net.mcreator.createmilitarysupport.block.entity;
 
+import software.bernie.geckolib.util.GeckoLibUtil;
+import software.bernie.geckolib.core.object.PlayState;
+import software.bernie.geckolib.core.animation.RawAnimation;
+import software.bernie.geckolib.core.animation.AnimationState;
+import software.bernie.geckolib.core.animation.AnimationController;
+import software.bernie.geckolib.core.animation.AnimatableManager;
+import software.bernie.geckolib.core.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.GeoBlockEntity;
+
+import net.minecraftforge.items.wrapper.SidedInvWrapper;
+import net.minecraftforge.items.IItemHandler;
+import net.minecraftforge.fluids.capability.templates.FluidTank;
+import net.minecraftforge.common.util.LazyOptional;
+import net.minecraftforge.common.capabilities.ForgeCapabilities;
+import net.minecraftforge.common.capabilities.Capability;
+
+import net.minecraft.world.level.material.Fluids;
+import net.minecraft.world.level.block.state.properties.IntegerProperty;
+import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.entity.RandomizableContainerBlockEntity;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.inventory.ChestMenu;
+import net.minecraft.world.inventory.AbstractContainerMenu;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.world.WorldlyContainer;
+import net.minecraft.world.ContainerHelper;
+import net.minecraft.network.protocol.game.ClientboundBlockEntityDataPacket;
+import net.minecraft.network.chat.Component;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.core.NonNullList;
+import net.minecraft.core.Direction;
+import net.minecraft.core.BlockPos;
+
+import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModBlockEntities;
+import net.mcreator.createmilitarysupport.block.RivetpressBlock;
+
 import javax.annotation.Nullable;
 
-import software.bernie.geckolib.core.animation.AnimatableManager;
-import software.bernie.geckolib.core.animation.AnimationState;
+import java.util.stream.IntStream;
 
 public class RivetpressTileEntity extends RandomizableContainerBlockEntity implements GeoBlockEntity, WorldlyContainer {
 	private final AnimatableInstanceCache cache = GeckoLibUtil.createInstanceCache(this);
@@ -57,12 +92,9 @@ public class RivetpressTileEntity extends RandomizableContainerBlockEntity imple
 	@Override
 	public void load(CompoundTag compound) {
 		super.load(compound);
-
 		if (!this.tryLoadLootTable(compound))
 			this.stacks = NonNullList.withSize(this.getContainerSize(), ItemStack.EMPTY);
-
 		ContainerHelper.loadAllItems(compound, this.stacks);
-
 		if (compound.get("fluidTank") instanceof CompoundTag compoundTag)
 			fluidTank.readFromNBT(compoundTag);
 	}
@@ -70,11 +102,9 @@ public class RivetpressTileEntity extends RandomizableContainerBlockEntity imple
 	@Override
 	public void saveAdditional(CompoundTag compound) {
 		super.saveAdditional(compound);
-
 		if (!this.trySaveLootTable(compound)) {
 			ContainerHelper.saveAllItems(compound, this.stacks);
 		}
-
 		compound.put("fluidTank", fluidTank.writeToNBT(new CompoundTag()));
 	}
 
@@ -156,7 +186,6 @@ public class RivetpressTileEntity extends RandomizableContainerBlockEntity imple
 			return true;
 		if (fs.getFluid() == Fluids.WATER)
 			return true;
-
 		return false;
 	}) {
 		@Override
@@ -171,10 +200,8 @@ public class RivetpressTileEntity extends RandomizableContainerBlockEntity imple
 	public <T> LazyOptional<T> getCapability(Capability<T> capability, @Nullable Direction facing) {
 		if (!this.remove && facing != null && capability == ForgeCapabilities.ITEM_HANDLER)
 			return handlers[facing.ordinal()].cast();
-
 		if (!this.remove && capability == ForgeCapabilities.FLUID_HANDLER)
 			return LazyOptional.of(() -> fluidTank).cast();
-
 		return super.getCapability(capability, facing);
 	}
 

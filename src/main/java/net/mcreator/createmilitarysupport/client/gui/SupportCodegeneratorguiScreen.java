@@ -1,13 +1,29 @@
 package net.mcreator.createmilitarysupport.client.gui;
 
+import net.minecraft.world.level.Level;
+import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.entity.player.Inventory;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.chat.Component;
+import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
+import net.minecraft.client.gui.components.Button;
+import net.minecraft.client.gui.GuiGraphics;
+
+import net.mcreator.createmilitarysupport.world.inventory.SupportCodegeneratorguiMenu;
+import net.mcreator.createmilitarysupport.procedures.TextgeneratorProcedure;
+import net.mcreator.createmilitarysupport.procedures.OptionstextgeneratorProcedure;
+import net.mcreator.createmilitarysupport.network.SupportCodegeneratorguiButtonMessage;
+import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
+
+import java.util.HashMap;
+
+import com.mojang.blaze3d.systems.RenderSystem;
+
 public class SupportCodegeneratorguiScreen extends AbstractContainerScreen<SupportCodegeneratorguiMenu> {
-
 	private final static HashMap<String, Object> guistate = SupportCodegeneratorguiMenu.guistate;
-
 	private final Level world;
 	private final int x, y, z;
 	private final Player entity;
-
 	Button button_generate_s250_card;
 	Button button_empty;
 	Button button_empty1;
@@ -28,11 +44,8 @@ public class SupportCodegeneratorguiScreen extends AbstractContainerScreen<Suppo
 	@Override
 	public void render(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
 		this.renderBackground(guiGraphics);
-
 		super.render(guiGraphics, mouseX, mouseY, partialTicks);
-
 		this.renderTooltip(guiGraphics, mouseX, mouseY);
-
 	}
 
 	@Override
@@ -40,9 +53,7 @@ public class SupportCodegeneratorguiScreen extends AbstractContainerScreen<Suppo
 		RenderSystem.setShaderColor(1, 1, 1, 1);
 		RenderSystem.enableBlend();
 		RenderSystem.defaultBlendFunc();
-
 		guiGraphics.blit(texture, this.leftPos, this.topPos, 0, 0, this.imageWidth, this.imageHeight, this.imageWidth, this.imageHeight);
-
 		RenderSystem.disableBlend();
 	}
 
@@ -52,7 +63,6 @@ public class SupportCodegeneratorguiScreen extends AbstractContainerScreen<Suppo
 			this.minecraft.player.closeContainer();
 			return true;
 		}
-
 		return super.keyPressed(key, b, c);
 	}
 
@@ -70,37 +80,29 @@ public class SupportCodegeneratorguiScreen extends AbstractContainerScreen<Suppo
 	@Override
 	public void init() {
 		super.init();
-
 		button_generate_s250_card = Button.builder(Component.translatable("gui.createmilitary_support.support_codegeneratorgui.button_generate_s250_card"), e -> {
 			if (true) {
 				CreatemilitarySupportMod.PACKET_HANDLER.sendToServer(new SupportCodegeneratorguiButtonMessage(0, x, y, z));
 				SupportCodegeneratorguiButtonMessage.handleButtonAction(entity, 0, x, y, z);
 			}
 		}).bounds(this.leftPos + 30, this.topPos + 59, 119, 20).build();
-
 		guistate.put("button:button_generate_s250_card", button_generate_s250_card);
 		this.addRenderableWidget(button_generate_s250_card);
-
 		button_empty = Button.builder(Component.translatable("gui.createmilitary_support.support_codegeneratorgui.button_empty"), e -> {
 			if (true) {
 				CreatemilitarySupportMod.PACKET_HANDLER.sendToServer(new SupportCodegeneratorguiButtonMessage(1, x, y, z));
 				SupportCodegeneratorguiButtonMessage.handleButtonAction(entity, 1, x, y, z);
 			}
 		}).bounds(this.leftPos + 25, this.topPos + 106, 30, 20).build();
-
 		guistate.put("button:button_empty", button_empty);
 		this.addRenderableWidget(button_empty);
-
 		button_empty1 = Button.builder(Component.translatable("gui.createmilitary_support.support_codegeneratorgui.button_empty1"), e -> {
 			if (true) {
 				CreatemilitarySupportMod.PACKET_HANDLER.sendToServer(new SupportCodegeneratorguiButtonMessage(2, x, y, z));
 				SupportCodegeneratorguiButtonMessage.handleButtonAction(entity, 2, x, y, z);
 			}
 		}).bounds(this.leftPos + 119, this.topPos + 106, 30, 20).build();
-
 		guistate.put("button:button_empty1", button_empty1);
 		this.addRenderableWidget(button_empty1);
-
 	}
-
 }

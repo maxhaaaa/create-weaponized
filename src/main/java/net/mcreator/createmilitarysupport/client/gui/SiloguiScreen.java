@@ -9,7 +9,6 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.client.gui.GuiGraphics;
 
 import net.mcreator.createmilitarysupport.world.inventory.SiloguiMenu;
-import net.mcreator.createmilitarysupport.procedures.YCORDSOFBOMBProcedure;
 
 import java.util.HashMap;
 
@@ -62,9 +61,7 @@ public class SiloguiScreen extends AbstractContainerScreen<SiloguiMenu> {
 	@Override
 	protected void renderLabels(GuiGraphics guiGraphics, int mouseX, int mouseY) {
 		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.silogui.label_in_progress"), 15, 10, -12829636, false);
-		guiGraphics.drawString(this.font,
-
-				YCORDSOFBOMBProcedure.execute(world, x, y, z), 17, 31, -12829636, false);
+		guiGraphics.drawString(this.font, Component.translatable("gui.createmilitary_support.silogui.label_bomb_sphere"), 71, 21, -12829636, false);
 	}
 
 	@Override

@@ -1,25 +1,9 @@
 
 package net.mcreator.createmilitarysupport.network;
 
-import net.minecraftforge.network.NetworkEvent;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-
-import net.minecraft.world.level.Level;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.network.FriendlyByteBuf;
-import net.minecraft.core.BlockPos;
-
-import net.mcreator.createmilitarysupport.world.inventory.StrikedevicenewguiMenu;
-import net.mcreator.createmilitarysupport.procedures.LaunchibcmProcedure;
-import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
-
-import java.util.function.Supplier;
-import java.util.HashMap;
-
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class StrikedevicenewguiButtonMessage {
+
 	private final int buttonID, x, y, z;
 
 	public StrikedevicenewguiButtonMessage(FriendlyByteBuf buffer) {
@@ -51,6 +35,7 @@ public class StrikedevicenewguiButtonMessage {
 			int x = message.x;
 			int y = message.y;
 			int z = message.z;
+
 			handleButtonAction(entity, buttonID, x, y, z);
 		});
 		context.setPacketHandled(true);
@@ -59,9 +44,11 @@ public class StrikedevicenewguiButtonMessage {
 	public static void handleButtonAction(Player entity, int buttonID, int x, int y, int z) {
 		Level world = entity.level();
 		HashMap guistate = StrikedevicenewguiMenu.guistate;
+
 		// security measure to prevent arbitrary chunk generation
 		if (!world.hasChunkAt(new BlockPos(x, y, z)))
 			return;
+
 		if (buttonID == 0) {
 
 			LaunchibcmProcedure.execute(world, entity);
@@ -72,4 +59,5 @@ public class StrikedevicenewguiButtonMessage {
 	public static void registerMessage(FMLCommonSetupEvent event) {
 		CreatemilitarySupportMod.addNetworkMessage(StrikedevicenewguiButtonMessage.class, StrikedevicenewguiButtonMessage::buffer, StrikedevicenewguiButtonMessage::new, StrikedevicenewguiButtonMessage::handler);
 	}
+
 }

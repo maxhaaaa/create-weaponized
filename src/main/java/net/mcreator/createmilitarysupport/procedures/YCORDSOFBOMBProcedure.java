@@ -1,6 +1,6 @@
 package net.mcreator.createmilitarysupport.procedures;
 
-import net.minecraft.world.entity.Entity;
+import net.minecraftforge.eventbus.api.Event;
 
 public class YCORDSOFBOMBProcedure {
 	public static String execute(Entity entity) {

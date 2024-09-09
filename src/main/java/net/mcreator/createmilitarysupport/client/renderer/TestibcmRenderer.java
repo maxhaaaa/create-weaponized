@@ -1,22 +1,11 @@
 package net.mcreator.createmilitarysupport.client.renderer;
 
-import net.minecraft.util.Mth;
-import net.minecraft.resources.ResourceLocation;
-import net.minecraft.client.renderer.texture.OverlayTexture;
-import net.minecraft.client.renderer.entity.EntityRendererProvider;
-import net.minecraft.client.renderer.entity.EntityRenderer;
-import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.MultiBufferSource;
-
-import net.mcreator.createmilitarysupport.entity.TestibcmEntity;
-import net.mcreator.createmilitarysupport.client.model.Modelbomb;
-
 import com.mojang.math.Axis;
-import com.mojang.blaze3d.vertex.VertexConsumer;
-import com.mojang.blaze3d.vertex.PoseStack;
 
 public class TestibcmRenderer extends EntityRenderer<TestibcmEntity> {
+
 	private static final ResourceLocation texture = new ResourceLocation("createmilitary_support:textures/entities/bomb.png");
+
 	private final Modelbomb model;
 
 	public TestibcmRenderer(EntityRendererProvider.Context context) {
@@ -32,6 +21,7 @@ public class TestibcmRenderer extends EntityRenderer<TestibcmEntity> {
 		poseStack.mulPose(Axis.ZP.rotationDegrees(90 + Mth.lerp(partialTicks, entityIn.xRotO, entityIn.getXRot())));
 		model.renderToBuffer(poseStack, vb, packedLightIn, OverlayTexture.NO_OVERLAY, 1, 1, 1, 1);
 		poseStack.popPose();
+
 		super.render(entityIn, entityYaw, partialTicks, poseStack, bufferIn, packedLightIn);
 	}
 
@@ -39,4 +29,5 @@ public class TestibcmRenderer extends EntityRenderer<TestibcmEntity> {
 	public ResourceLocation getTextureLocation(TestibcmEntity entity) {
 		return texture;
 	}
+
 }

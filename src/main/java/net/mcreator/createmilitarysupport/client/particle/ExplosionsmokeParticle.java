@@ -36,14 +36,14 @@ public class ExplosionsmokeParticle extends TextureSheetParticle {
 		super(world, x, y, z);
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
-		this.quadSize *= 5f;
-		this.lifetime = (int) Math.max(1, 400 + (this.random.nextInt(800) - 400));
+		this.quadSize *= 8f;
+		this.lifetime = (int) Math.max(1, 250 + (this.random.nextInt(500) - 250));
 		this.gravity = -0.05f;
 		this.hasPhysics = false;
 		this.xd = vx * 1;
 		this.yd = vy * 1;
 		this.zd = vz * 1;
-		this.pickSprite(spriteSet);
+		this.setSpriteFromAge(spriteSet);
 	}
 
 	@Override
@@ -54,5 +54,8 @@ public class ExplosionsmokeParticle extends TextureSheetParticle {
 	@Override
 	public void tick() {
 		super.tick();
+		if (!this.removed) {
+			this.setSprite(this.spriteSet.get((this.age / 44) % 9 + 1, 9));
+		}
 	}
 }

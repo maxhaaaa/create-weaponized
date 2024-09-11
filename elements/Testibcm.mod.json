@@ -15,6 +15,9 @@
     "knockback": 5,
     "entityModel": "Modelbomb",
     "customModelTexture": "bomb.png",
+    "onHitsBlock": {
+      "name": "Mushroomcloudpart1"
+    },
     "onFlyingTick": {
       "name": "TestibcmWhileProjectileFlyingTick"
     }

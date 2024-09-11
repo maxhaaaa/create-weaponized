@@ -1,5 +1,13 @@
 {
   "textures": [
-    "createmilitary_support:explosionsmoke"
+    "createmilitary_support:explosionsmoke_1",
+    "createmilitary_support:explosionsmoke_2",
+    "createmilitary_support:explosionsmoke_3",
+    "createmilitary_support:explosionsmoke_4",
+    "createmilitary_support:explosionsmoke_5",
+    "createmilitary_support:explosionsmoke_6",
+    "createmilitary_support:explosionsmoke_7",
+    "createmilitary_support:explosionsmoke_8",
+    "createmilitary_support:explosionsmoke_9"
   ]
 }

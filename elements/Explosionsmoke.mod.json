@@ -2,18 +2,18 @@
   "_fv": 66,
   "_type": "particle",
   "definition": {
-    "texture": "explosion_smoke",
-    "animate": false,
-    "frameDuration": 1,
+    "texture": "animated_explosion_smoke",
+    "animate": true,
+    "frameDuration": 44,
     "width": 0.2,
     "height": 0.2,
     "scale": {
-      "fixedValue": 5.0
+      "fixedValue": 8.0
     },
     "speedFactor": 1.0,
     "gravity": -0.05,
-    "maxAge": 400,
-    "maxAgeDiff": 400,
+    "maxAge": 250,
+    "maxAgeDiff": 250,
     "angularVelocity": 0.0,
     "angularAcceleration": 0.0,
     "canCollide": false,

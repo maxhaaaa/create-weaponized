@@ -7,6 +7,7 @@ import net.minecraftforge.network.NetworkHooks;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ItemSupplier;
@@ -20,6 +21,7 @@ import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.mcreator.createmilitarysupport.procedures.TestibcmWhileProjectileFlyingTickProcedure;
+import net.mcreator.createmilitarysupport.procedures.Mushroomcloudpart1Procedure;
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModItems;
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModEntities;
 
@@ -63,6 +65,12 @@ public class TestibcmEntity extends AbstractArrow implements ItemSupplier {
 	protected void doPostHurtEffects(LivingEntity entity) {
 		super.doPostHurtEffects(entity);
 		entity.setArrowCount(entity.getArrowCount() - 1);
+	}
+
+	@Override
+	public void onHitBlock(BlockHitResult blockHitResult) {
+		super.onHitBlock(blockHitResult);
+		Mushroomcloudpart1Procedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override

@@ -89,29 +89,33 @@ public class Mushroomcloudpart1Procedure {
 			yheight = yheight - 1;
 		}
 		loop = 0;
-		particleAmount = 50;
-		sphereloop = 5;
+		particleAmount = 10;
+		size = 20;
+		sphereloop = 3;
 		xRadius = 1;
 		zRadius = 1;
 		yheight = 0;
 		for (int index8 = 0; index8 < (int) sphereloop; index8++) {
-			for (int index9 = 0; index9 < 5; index9++) {
+			for (int index9 = 0; index9 < (int) size; index9++) {
 				while (loop < particleAmount) {
 					if (world instanceof Level _level && !_level.isClientSide())
-						_level.explode(null, (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight), (z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 10, Level.ExplosionInteraction.MOB);
+						_level.explode(null, (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight), (z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 4, Level.ExplosionInteraction.MOB);
 					loop = loop + 1;
 				}
-				yheight = yheight - 1;
 				loop = 0;
 				if (increase == 4) {
-					particleAmount = particleAmount + 10;
+					particleAmount = particleAmount + 3;
 					increase = 0;
 				} else {
 					increase = increase + 1;
 				}
-				xRadius = xRadius - 2;
-				zRadius = zRadius - 2;
+				xRadius = xRadius + 1;
+				zRadius = zRadius + 1;
 			}
+			xRadius = 0;
+			zRadius = 0;
+			yheight = yheight - 1;
+			size = size + 10;
 		}
 	}
 }

@@ -37,7 +37,7 @@ public class ExplosionsmokeParticle extends TextureSheetParticle {
 		this.spriteSet = spriteSet;
 		this.setSize(0.2f, 0.2f);
 		this.quadSize *= 5f;
-		this.lifetime = (int) Math.max(1, 300 + (this.random.nextInt(600) - 300));
+		this.lifetime = (int) Math.max(1, 400 + (this.random.nextInt(800) - 400));
 		this.gravity = -0.05f;
 		this.hasPhysics = false;
 		this.xd = vx * 1;

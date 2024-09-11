@@ -1,6 +1,15 @@
 package net.mcreator.createmilitarysupport.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.Level;
+import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.entity.projectile.Projectile;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.server.level.ServerLevel;
+
+import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModEntities;
+import net.mcreator.createmilitarysupport.entity.TestibcmEntity;
 
 public class LaunchibcmProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -9,7 +18,7 @@ public class LaunchibcmProcedure {
 		if (world instanceof ServerLevel projectileLevel) {
 			Projectile _entityToSpawn = new Object() {
 				public Projectile getArrow(Level level, Entity shooter, float damage, int knockback) {
-					AbstractArrow entityToSpawn = new TestibcmEntity(CreatemilitarySupportModEntities.DELETED_MOD_ELEMENT.get(), level);
+					AbstractArrow entityToSpawn = new TestibcmEntity(CreatemilitarySupportModEntities.TESTIBCM.get(), level);
 					entityToSpawn.setOwner(shooter);
 					entityToSpawn.setBaseDamage(damage);
 					entityToSpawn.setKnockback(knockback);

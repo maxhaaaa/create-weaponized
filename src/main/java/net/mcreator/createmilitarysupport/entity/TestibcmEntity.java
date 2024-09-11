@@ -1,6 +1,28 @@
 
 package net.mcreator.createmilitarysupport.entity;
 
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.network.PlayMessages;
+import net.minecraftforge.network.NetworkHooks;
+import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.api.distmarker.Dist;
+
+import net.minecraft.world.level.Level;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.entity.projectile.ItemSupplier;
+import net.minecraft.world.entity.projectile.AbstractArrow;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.util.RandomSource;
+import net.minecraft.sounds.SoundSource;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
+import net.minecraft.network.protocol.Packet;
+
+import net.mcreator.createmilitarysupport.procedures.TestibcmWhileProjectileFlyingTickProcedure;
+import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModItems;
+import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModEntities;
+
 @OnlyIn(value = Dist.CLIENT, _interface = ItemSupplier.class)
 public class TestibcmEntity extends AbstractArrow implements ItemSupplier {
 	public static final ItemStack PROJECTILE_ITEM = new ItemStack(CreatemilitarySupportModItems.SC_500PUNCHCARD.get());
@@ -46,7 +68,7 @@ public class TestibcmEntity extends AbstractArrow implements ItemSupplier {
 	@Override
 	public void tick() {
 		super.tick();
-		TestibcmWhileProjectileFlyingTickProcedure.execute(this.getOwner(), this);
+		TestibcmWhileProjectileFlyingTickProcedure.execute(this.level(), this.getOwner(), this);
 		if (this.inGround)
 			this.discard();
 	}

@@ -7,6 +7,7 @@ import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
 import net.mcreator.createmilitarysupport.init.CreatemilitarySupportModBlockEntities;
+import net.mcreator.createmilitarysupport.block.renderer.TrinitytowerTileRenderer;
 import net.mcreator.createmilitarysupport.block.renderer.RivetpressTileRenderer;
 import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
 
@@ -16,5 +17,6 @@ public class ClientListener {
 	@SubscribeEvent
 	public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
 		event.registerBlockEntityRenderer(CreatemilitarySupportModBlockEntities.RIVETPRESS.get(), context -> new RivetpressTileRenderer());
+		event.registerBlockEntityRenderer(CreatemilitarySupportModBlockEntities.TRINITYTOWER.get(), context -> new TrinitytowerTileRenderer());
 	}
 }

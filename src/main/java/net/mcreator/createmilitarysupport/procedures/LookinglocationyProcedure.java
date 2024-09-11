@@ -1,6 +1,7 @@
 package net.mcreator.createmilitarysupport.procedures;
 
-import net.minecraftforge.eventbus.api.Event;
+import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.entity.Entity;
 
 public class LookinglocationyProcedure {
 	public static String execute(Entity entity) {

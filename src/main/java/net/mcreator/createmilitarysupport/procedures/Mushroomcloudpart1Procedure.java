@@ -29,48 +29,88 @@ public class Mushroomcloudpart1Procedure {
 			}
 		}
 		loop = 0;
-		sphereloop = 5;
+		sphereloop = 3;
 		particleAmount = 50;
 		xRadius = 1;
 		zRadius = 1;
 		yheight = 0;
 		size = 0;
 		for (int index0 = 0; index0 < (int) sphereloop; index0++) {
-			for (int index1 = 0; index1 < 10; index1++) {
+			for (int index1 = 0; index1 < 5; index1++) {
 				while (loop < particleAmount) {
 					world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.EXPLOSIONSMOKE.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight),
 							(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.01, 0);
 					loop = loop + 1;
 				}
-				yheight = yheight + 0.05;
+				yheight = yheight + 1;
 				loop = 0;
 				if (increase == 4) {
-					particleAmount = particleAmount + 2;
+					particleAmount = particleAmount + 10;
 					increase = 0;
 				} else {
 					increase = increase + 1;
 				}
-				xRadius = xRadius * 0.5;
-				zRadius = zRadius * 0.5;
+				xRadius = xRadius + 2;
+				zRadius = zRadius + 2;
 			}
 		}
 		for (int index3 = 0; index3 < (int) sphereloop; index3++) {
-			for (int index4 = 0; index4 < 10; index4++) {
+			for (int index4 = 0; index4 < 5; index4++) {
 				while (loop < particleAmount) {
 					world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.EXPLOSIONSMOKE.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight),
 							(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.01, 0);
 					loop = loop + 1;
 				}
-				yheight = yheight + 0.05;
+				yheight = yheight + 1;
 				loop = 0;
 				if (increase == 4) {
-					particleAmount = particleAmount + 2;
+					particleAmount = particleAmount + 10;
 					increase = 0;
 				} else {
 					increase = increase + 1;
 				}
-				xRadius = xRadius / 0.5;
-				zRadius = zRadius / 0.5;
+				xRadius = xRadius - 2;
+				zRadius = zRadius - 2;
+			}
+		}
+		loop = 0;
+		particleAmount = 30;
+		xRadius = 5;
+		zRadius = 5;
+		yheight = 0;
+		size = 0;
+		for (int index6 = 0; index6 < 50; index6++) {
+			while (loop < particleAmount) {
+				world.addParticle((SimpleParticleType) (CreatemilitarySupportModParticleTypes.EXPLOSIONSMOKE.get()), (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight),
+						(z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 0, 0.05, 0);
+				loop = loop + 1;
+			}
+			loop = 0;
+			yheight = yheight - 1;
+		}
+		loop = 0;
+		particleAmount = 50;
+		sphereloop = 5;
+		xRadius = 1;
+		zRadius = 1;
+		yheight = 0;
+		for (int index8 = 0; index8 < (int) sphereloop; index8++) {
+			for (int index9 = 0; index9 < 5; index9++) {
+				while (loop < particleAmount) {
+					if (world instanceof Level _level && !_level.isClientSide())
+						_level.explode(null, (x + 0.5 + Math.cos(((Math.PI * 2) / particleAmount) * loop) * xRadius), (y + yheight), (z + 0.5 + Math.sin(((Math.PI * 2) / particleAmount) * loop) * zRadius), 10, Level.ExplosionInteraction.MOB);
+					loop = loop + 1;
+				}
+				yheight = yheight - 1;
+				loop = 0;
+				if (increase == 4) {
+					particleAmount = particleAmount + 10;
+					increase = 0;
+				} else {
+					increase = increase + 1;
+				}
+				xRadius = xRadius - 2;
+				zRadius = zRadius - 2;
 			}
 		}
 	}

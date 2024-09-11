@@ -53,6 +53,7 @@ import net.mcreator.createmilitarysupport.item.BombExplosionRadiusItem;
 import net.mcreator.createmilitarysupport.item.BombExplosionAmountItem;
 import net.mcreator.createmilitarysupport.item.BombCasingItem;
 import net.mcreator.createmilitarysupport.item.AnassemblyOfcomponentsItem;
+import net.mcreator.createmilitarysupport.block.display.TrinitytowerDisplayItem;
 import net.mcreator.createmilitarysupport.block.display.RivetpressDisplayItem;
 import net.mcreator.createmilitarysupport.CreatemilitarySupportMod;
 
@@ -108,6 +109,7 @@ public class CreatemilitarySupportModItems {
 	public static final RegistryObject<Item> BOMBTESTINGBLOCK = block(CreatemilitarySupportModBlocks.BOMBTESTINGBLOCK);
 	public static final RegistryObject<Item> TEST_NUKE = block(CreatemilitarySupportModBlocks.TEST_NUKE);
 	public static final RegistryObject<Item> SILOTESTER = block(CreatemilitarySupportModBlocks.SILOTESTER);
+	public static final RegistryObject<Item> TRINITYTOWER = REGISTRY.register(CreatemilitarySupportModBlocks.TRINITYTOWER.getId().getPath(), () -> new TrinitytowerDisplayItem(CreatemilitarySupportModBlocks.TRINITYTOWER.get(), new Item.Properties()));
 
 	// Start of user code block custom items
 	// End of user code block custom items

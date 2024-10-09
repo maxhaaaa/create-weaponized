@@ -72,11 +72,10 @@ public class CreatemilitarySupportModTabs {
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(CreatemilitarySupportModItems.SOLDIERFIRE_SPAWN_EGG.get());
-			tabData.accept(CreatemilitarySupportModItems.EXPLODE_5_SPAWN_EGG.get());
-		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+
 			tabData.accept(CreatemilitarySupportModItems.ANASSEMBLY_OFCOMPONENTS.get());
+
 		}
 	}
 }

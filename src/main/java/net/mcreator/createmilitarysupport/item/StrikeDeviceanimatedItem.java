@@ -105,7 +105,7 @@ public class StrikeDeviceanimatedItem extends Item implements GeoItem {
 		double y = entity.getY();
 		double z = entity.getZ();
 
-		StrikedeviceRightclickedProcedure.execute(world, x, y, z, entity);
+		StrikedeviceRightclickedProcedure.execute();
 		return ar;
 	}
 }

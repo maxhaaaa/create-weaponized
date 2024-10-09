@@ -1,5 +1,5 @@
 {
-  "_fv": 66,
+  "_fv": 69,
   "_type": "animateditem",
   "definition": {
     "renderType": 0,
@@ -11,10 +11,11 @@
     "leftArm": "",
     "rightArm": "",
     "perspective": "All Perspectives",
-    "creativeTab": {
-      "value": "CUSTOM:Militarysupport"
-    },
-    "creativeTabs": [],
+    "creativeTabs": [
+      {
+        "value": "CUSTOM:Militarysupport"
+      }
+    ],
     "firstPersonArms": false,
     "stackSize": 1,
     "enchantability": 0,

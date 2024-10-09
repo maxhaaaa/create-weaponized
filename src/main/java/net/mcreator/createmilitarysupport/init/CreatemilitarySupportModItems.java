@@ -79,10 +79,8 @@ public class CreatemilitarySupportModItems {
 	public static final RegistryObject<Item> LOOPERTEST = REGISTRY.register("loopertest", () -> new LoopertestItem());
 	public static final RegistryObject<Item> CONSTRUCABLES_250 = REGISTRY.register("construcables_250", () -> new Construcables250Item());
 	public static final RegistryObject<Item> SUPERLEINFEILD = REGISTRY.register("superleinfeild", () -> new SuperleinfeildItem());
-	public static final RegistryObject<Item> SOLDIERFIRE_SPAWN_EGG = REGISTRY.register("soldierfire_spawn_egg", () -> new ForgeSpawnEggItem(CreatemilitarySupportModEntities.SOLDIERFIRE, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> SC_500PUNCHCARD = REGISTRY.register("sc_500punchcard", () -> new Sc500punchcardItem());
 	public static final RegistryObject<Item> SC_500 = REGISTRY.register("sc_500", () -> new Sc500Item());
-	public static final RegistryObject<Item> EXPLODE_5_SPAWN_EGG = REGISTRY.register("explode_5_spawn_egg", () -> new ForgeSpawnEggItem(CreatemilitarySupportModEntities.EXPLODE_5, -1, -1, new Item.Properties()));
 	public static final RegistryObject<Item> NUKECARD = REGISTRY.register("nukecard", () -> new NukecardItem());
 	public static final RegistryObject<Item> MISSLE_57 = REGISTRY.register("missle_57", () -> new Missle57Item());
 	public static final RegistryObject<Item> HE_57CARD = REGISTRY.register("he_57card", () -> new He57cardItem());

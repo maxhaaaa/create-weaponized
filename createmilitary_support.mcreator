@@ -8,8 +8,8 @@
       "registry_name": "anassembly_ofcomponents",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/AnassemblyOfcomponentsItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/anassembly_ofcomponents.json"
+          "src/main/resources/assets/createmilitary_support/models/item/anassembly_ofcomponents.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/AnassemblyOfcomponentsItem.java"
         ]
       },
       "path": "~/tycoon/components"
@@ -23,8 +23,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/network/ComponenttelporterguiButtonMessage.java",
-          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/ComponenttelporterguiMenu.java",
-          "src/main/java/net/mcreator/createmilitarysupport/client/gui/ComponenttelporterguiScreen.java"
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/ComponenttelporterguiScreen.java",
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/ComponenttelporterguiMenu.java"
         ]
       },
       "path": "~/tycoon"
@@ -37,12 +37,12 @@
       "registry_name": "componentteleporter",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/blockstates/componentteleporter.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/entity/ComponentteleporterBlockEntity.java",
           "src/main/resources/assets/createmilitary_support/models/block/componentteleporter.json",
-          "src/main/resources/data/createmilitary_support/loot_tables/blocks/componentteleporter.json",
           "src/main/resources/assets/createmilitary_support/models/item/componentteleporter.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/ComponentteleporterBlock.java"
+          "src/main/java/net/mcreator/createmilitarysupport/block/ComponentteleporterBlock.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/ComponentteleporterBlockEntity.java",
+          "src/main/resources/data/createmilitary_support/loot_tables/blocks/componentteleporter.json",
+          "src/main/resources/assets/createmilitary_support/blockstates/componentteleporter.json"
         ]
       },
       "path": "~/tycoon"
@@ -109,8 +109,8 @@
       "registry_name": "level_1plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/level_1plate.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/Level1plateItem.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level1plateItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/level_1plate.json"
         ]
       },
       "path": "~/tycoon/components/reinforced_plate"
@@ -151,8 +151,8 @@
       "registry_name": "level_4plate",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/Level4plateItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/level_4plate.json"
+          "src/main/resources/assets/createmilitary_support/models/item/level_4plate.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level4plateItem.java"
         ]
       },
       "path": "~/tycoon/components/reinforced_plate"
@@ -165,8 +165,8 @@
       "registry_name": "level_5plate",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/level_5plate.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/Level5plateItem.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/Level5plateItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/level_5plate.json"
         ]
       },
       "path": "~/tycoon/components/reinforced_plate"
@@ -193,10 +193,10 @@
       "registry_name": "screwdriver",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/model/ScrewdriverItemModel.java",
-          "src/main/resources/assets/createmilitary_support/models/item/screwdriver.json",
           "src/main/java/net/mcreator/createmilitarysupport/item/ScrewdriverItem.java",
-          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/ScrewdriverItemRenderer.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/ScrewdriverItemModel.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/ScrewdriverItemRenderer.java",
+          "src/main/resources/assets/createmilitary_support/models/item/screwdriver.json"
         ]
       },
       "path": "~/tycoon/tools/screwdriver"
@@ -232,12 +232,12 @@
       "registry_name": "senderblock",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/block/SenderblockBlock.java",
           "src/main/java/net/mcreator/createmilitarysupport/block/entity/SenderblockBlockEntity.java",
-          "src/main/resources/assets/createmilitary_support/models/block/senderblock.json",
-          "src/main/resources/data/createmilitary_support/loot_tables/blocks/senderblock.json",
-          "src/main/resources/assets/createmilitary_support/models/item/senderblock.json",
           "src/main/resources/assets/createmilitary_support/blockstates/senderblock.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/SenderblockBlock.java"
+          "src/main/resources/assets/createmilitary_support/models/block/senderblock.json",
+          "src/main/resources/assets/createmilitary_support/models/item/senderblock.json",
+          "src/main/resources/data/createmilitary_support/loot_tables/blocks/senderblock.json"
         ]
       },
       "path": "~/tycoon"
@@ -283,9 +283,9 @@
       "registry_name": "senderblockgui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/network/SenderblockguiButtonMessage.java",
           "src/main/java/net/mcreator/createmilitarysupport/world/inventory/SenderblockguiMenu.java",
-          "src/main/java/net/mcreator/createmilitarysupport/client/gui/SenderblockguiScreen.java",
-          "src/main/java/net/mcreator/createmilitarysupport/network/SenderblockguiButtonMessage.java"
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/SenderblockguiScreen.java"
         ]
       },
       "path": "~/tycoon"
@@ -415,8 +415,8 @@
       "registry_name": "strikedevice",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/StrikedeviceItem.java",
           "src/main/resources/assets/createmilitary_support/models/item/strikedevice.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/StrikedeviceItem.java",
           "src/main/java/net/mcreator/createmilitarysupport/item/inventory/StrikedeviceInventoryCapability.java"
         ]
       },
@@ -432,28 +432,7 @@
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/procedures/StrikedeviceRightclickedProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/military/strike_device"
     },
@@ -547,8 +526,8 @@
       "registry_name": "debug",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/debug.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/DebugItem.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/DebugItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/debug.json"
         ]
       }
     },
@@ -560,8 +539,8 @@
       "registry_name": "fire",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/client/particle/FireParticle.java",
-          "src/main/resources/assets/createmilitary_support/particles/fire.json"
+          "src/main/resources/assets/createmilitary_support/particles/fire.json",
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/FireParticle.java"
         ]
       },
       "path": "~/military/strike_device"
@@ -609,8 +588,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/client/gui/SupportCodegeneratorguiScreen.java",
-          "src/main/java/net/mcreator/createmilitarysupport/network/SupportCodegeneratorguiButtonMessage.java",
-          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/SupportCodegeneratorguiMenu.java"
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/SupportCodegeneratorguiMenu.java",
+          "src/main/java/net/mcreator/createmilitarysupport/network/SupportCodegeneratorguiButtonMessage.java"
         ]
       },
       "path": "~/tycoon/card_machine"
@@ -623,8 +602,8 @@
       "registry_name": "sc_250",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/sc_250.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/Sc250Item.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/Sc250Item.java",
+          "src/main/resources/assets/createmilitary_support/models/item/sc_250.json"
         ]
       },
       "path": "~/military/strike_device/sc250"
@@ -714,10 +693,10 @@
       "registry_name": "loopertest",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/loopertest.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/LoopertestItemRenderer.java",
           "src/main/java/net/mcreator/createmilitarysupport/item/LoopertestItem.java",
-          "src/main/java/net/mcreator/createmilitarysupport/item/model/LoopertestItemModel.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/LoopertestItemModel.java",
+          "src/main/resources/assets/createmilitary_support/models/item/loopertest.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/LoopertestItemRenderer.java"
         ]
       },
       "path": "~/tycoon/tools/looper_test"
@@ -753,9 +732,9 @@
       "registry_name": "construcables_250",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/Construcables250ItemRenderer.java",
           "src/main/java/net/mcreator/createmilitarysupport/item/Construcables250Item.java",
           "src/main/java/net/mcreator/createmilitarysupport/item/model/Construcables250ItemModel.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/Construcables250ItemRenderer.java",
           "src/main/resources/assets/createmilitary_support/models/item/construcables_250.json"
         ]
       },
@@ -886,21 +865,6 @@
       "path": "~/wunderwaffens/super-lee enfeil"
     },
     {
-      "name": "Soldierfire",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "soldierfire",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/entity/SoldierfireEntity.java",
-          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/SoldierfireRenderer.java",
-          "src/main/resources/assets/createmilitary_support/models/item/soldierfire_spawn_egg.json"
-        ]
-      },
-      "path": "~/the myster dymensions"
-    },
-    {
       "name": "Sc500punchcard",
       "type": "item",
       "compiles": true,
@@ -908,8 +872,8 @@
       "registry_name": "sc_500punchcard",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/sc_500punchcard.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/Sc500punchcardItem.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/Sc500punchcardItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/sc_500punchcard.json"
         ]
       },
       "path": "~/military/strike_device/punch_cards_striker"
@@ -1149,51 +1113,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/entity/NuketestEntity.java"
-        ]
-      },
-      "path": "~/military/strike_device/nuke"
-    },
-    {
-      "name": "Explode5",
-      "type": "livingentity",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "explode_5",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/Explode5Renderer.java",
-          "src/main/resources/assets/createmilitary_support/models/item/explode_5_spawn_egg.json",
-          "src/main/java/net/mcreator/createmilitarysupport/entity/Explode5Entity.java"
-        ]
-      }
-    },
-    {
-      "name": "Nuketest2",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "nuketest_2",
-      "metadata": {
-        "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/procedures/Nuketest2Procedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
         ]
       },
       "path": "~/military/strike_device/nuke"
@@ -1610,8 +1529,8 @@
       "registry_name": "bullet_9mmcasing",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmcasing.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmcasingItem.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmcasingItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmcasing.json"
         ]
       },
       "path": "~/tycoon/components/bullet/9mm"
@@ -1638,8 +1557,8 @@
       "registry_name": "bullet_9mmlevel_3",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmlevel_3.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmlevel3Item.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/Bullet9mmlevel3Item.java",
+          "src/main/resources/assets/createmilitary_support/models/item/bullet_9mmlevel_3.json"
         ]
       },
       "path": "~/tycoon/components/bullet/9mm"
@@ -1680,8 +1599,8 @@
       "registry_name": "headbullet",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/HeadbulletItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/headbullet.json"
+          "src/main/resources/assets/createmilitary_support/models/item/headbullet.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/HeadbulletItem.java"
         ]
       },
       "path": "~/tycoon/components/bullet"
@@ -1696,8 +1615,8 @@
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/item/Constructable250level2Item.java",
           "src/main/resources/assets/createmilitary_support/models/item/constructable_250level_2.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/Constructable250level2ItemRenderer.java",
-          "src/main/java/net/mcreator/createmilitarysupport/item/model/Constructable250level2ItemModel.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/model/Constructable250level2ItemModel.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/Constructable250level2ItemRenderer.java"
         ]
       },
       "path": "~/tycoon/components/construcable s250"
@@ -1725,9 +1644,9 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/item/StrikeDeviceanimatedItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/strike_deviceanimated.json",
           "src/main/java/net/mcreator/createmilitarysupport/item/model/StrikeDeviceanimatedItemModel.java",
-          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/StrikeDeviceanimatedItemRenderer.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/StrikeDeviceanimatedItemRenderer.java",
+          "src/main/resources/assets/createmilitary_support/models/item/strike_deviceanimated.json"
         ]
       },
       "path": "~/military/strike_device"
@@ -1807,8 +1726,8 @@
       "registry_name": "kg_50incinderay",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/Kg50incinderayItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/kg_50incinderay.json"
+          "src/main/resources/assets/createmilitary_support/models/item/kg_50incinderay.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/Kg50incinderayItem.java"
         ]
       },
       "path": "~/military/strike_device/punch_cards_striker"
@@ -1821,10 +1740,10 @@
       "registry_name": "rcxd",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/RcxdRenderer.java",
           "src/main/java/net/mcreator/createmilitarysupport/entity/RcxdEntity.java",
-          "src/main/resources/data/createmilitary_support/forge/biome_modifier/rcxd_biome_modifier.json",
+          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/RcxdRenderer.java",
           "src/main/resources/assets/createmilitary_support/models/item/rcxd_spawn_egg.json",
+          "src/main/resources/data/createmilitary_support/forge/biome_modifier/rcxd_biome_modifier.json",
           "src/main/java/net/mcreator/createmilitarysupport/entity/model/RcxdModel.java"
         ]
       },
@@ -1883,10 +1802,10 @@
       "registry_name": "infpanzerfaust",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/infpanzerfaust.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/InfpanzerfaustItem.java",
+          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/InfpanzerfaustItemRenderer.java",
           "src/main/java/net/mcreator/createmilitarysupport/item/model/InfpanzerfaustItemModel.java",
-          "src/main/java/net/mcreator/createmilitarysupport/item/renderer/InfpanzerfaustItemRenderer.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/InfpanzerfaustItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/infpanzerfaust.json"
         ]
       },
       "path": "~/wunderwaffens/panzerfaust_inf"
@@ -2022,16 +1941,16 @@
       "registry_name": "rivetpress",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/rivetpress.json",
           "src/main/java/net/mcreator/createmilitarysupport/block/model/RivetpressBlockModel.java",
-          "src/main/java/net/mcreator/createmilitarysupport/block/display/RivetpressDisplayItem.java",
-          "src/main/resources/assets/createmilitary_support/blockstates/rivetpress.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/renderer/RivetpressTileRenderer.java",
           "src/main/java/net/mcreator/createmilitarysupport/block/model/RivetpressDisplayModel.java",
-          "src/main/java/net/mcreator/createmilitarysupport/block/renderer/RivetpressDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/createmilitarysupport/block/RivetpressBlock.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/display/RivetpressDisplayItem.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/RivetpressTileEntity.java",
           "src/main/resources/assets/createmilitary_support/models/custom/rivetpress_particle.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/entity/RivetpressTileEntity.java"
+          "src/main/java/net/mcreator/createmilitarysupport/block/renderer/RivetpressDisplayItemRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/renderer/RivetpressTileRenderer.java",
+          "src/main/resources/assets/createmilitary_support/models/item/rivetpress.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/RivetpressBlock.java",
+          "src/main/resources/assets/createmilitary_support/blockstates/rivetpress.json"
         ]
       },
       "path": "~/tycoon/rivet_press"
@@ -2167,8 +2086,8 @@
       "registry_name": "nuclearfiree",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/client/particle/NuclearfireeParticle.java",
-          "src/main/resources/assets/createmilitary_support/particles/nuclearfiree.json"
+          "src/main/resources/assets/createmilitary_support/particles/nuclearfiree.json",
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/NuclearfireeParticle.java"
         ]
       },
       "path": "~/military/strike_device/nuke"
@@ -2275,24 +2194,7 @@
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/procedures/LaunchingblocksProcedure.java"
         ],
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
+        "dependencies": []
       },
       "path": "~/basics in bombs_Testing grounds/sfx"
     },
@@ -2332,8 +2234,8 @@
       "registry_name": "bomb_casing",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/BombCasingItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/bomb_casing.json"
+          "src/main/resources/assets/createmilitary_support/models/item/bomb_casing.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/BombCasingItem.java"
         ]
       },
       "path": "~/military/BeavTests"
@@ -2346,8 +2248,8 @@
       "registry_name": "loaded_bomb",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/LoadedBombItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/loaded_bomb.json"
+          "src/main/resources/assets/createmilitary_support/models/item/loaded_bomb.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/LoadedBombItem.java"
         ]
       },
       "path": "~/military/BeavTests"
@@ -2361,8 +2263,8 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/network/BombCrafterGUIButtonMessage.java",
-          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/BombCrafterGUIMenu.java",
-          "src/main/java/net/mcreator/createmilitarysupport/client/gui/BombCrafterGUIScreen.java"
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/BombCrafterGUIScreen.java",
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/BombCrafterGUIMenu.java"
         ]
       },
       "path": "~/military/BeavTests"
@@ -2375,8 +2277,8 @@
       "registry_name": "bomb_explosion_amount",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionAmountItem.java",
-          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_amount.json"
+          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_amount.json",
+          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionAmountItem.java"
         ]
       },
       "path": "~/military/BeavTests"
@@ -2389,8 +2291,8 @@
       "registry_name": "bomb_explosion_radius",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_radius.json",
-          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionRadiusItem.java"
+          "src/main/java/net/mcreator/createmilitarysupport/item/BombExplosionRadiusItem.java",
+          "src/main/resources/assets/createmilitary_support/models/item/bomb_explosion_radius.json"
         ]
       },
       "path": "~/military/BeavTests"
@@ -2457,12 +2359,12 @@
       "registry_name": "bomb_crafter",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/bomb_crafter.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/BombCrafterBlock.java",
           "src/main/resources/assets/createmilitary_support/blockstates/bomb_crafter.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/entity/BombCrafterBlockEntity.java",
           "src/main/resources/assets/createmilitary_support/models/block/bomb_crafter.json",
-          "src/main/resources/data/createmilitary_support/loot_tables/blocks/bomb_crafter.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/BombCrafterBlock.java"
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/BombCrafterBlockEntity.java",
+          "src/main/resources/assets/createmilitary_support/models/item/bomb_crafter.json",
+          "src/main/resources/data/createmilitary_support/loot_tables/blocks/bomb_crafter.json"
         ]
       },
       "path": "~/military/BeavTests"
@@ -2506,11 +2408,11 @@
       "registry_name": "bombtestingblock",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/item/bombtestingblock.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/BombtestingblockBlock.java",
           "src/main/resources/data/createmilitary_support/loot_tables/blocks/bombtestingblock.json",
-          "src/main/resources/assets/createmilitary_support/models/block/bombtestingblock.json",
+          "src/main/resources/assets/createmilitary_support/models/item/bombtestingblock.json",
           "src/main/resources/assets/createmilitary_support/blockstates/bombtestingblock.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/BombtestingblockBlock.java"
+          "src/main/resources/assets/createmilitary_support/models/block/bombtestingblock.json"
         ]
       },
       "path": "~/basics in bombs_Testing grounds/particles"
@@ -2523,8 +2425,8 @@
       "registry_name": "buzz_flash",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/particles/buzz_flash.json",
-          "src/main/java/net/mcreator/createmilitarysupport/client/particle/BuzzFlashParticle.java"
+          "src/main/java/net/mcreator/createmilitarysupport/client/particle/BuzzFlashParticle.java",
+          "src/main/resources/assets/createmilitary_support/particles/buzz_flash.json"
         ]
       },
       "path": "~/basics in bombs_Testing grounds/particles"
@@ -2735,11 +2637,11 @@
       "registry_name": "test_nuke",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/block/TestNukeBlock.java",
-          "src/main/resources/assets/createmilitary_support/blockstates/test_nuke.json",
           "src/main/resources/data/createmilitary_support/loot_tables/blocks/test_nuke.json",
           "src/main/resources/assets/createmilitary_support/models/block/test_nuke.json",
-          "src/main/resources/assets/createmilitary_support/models/item/test_nuke.json"
+          "src/main/resources/assets/createmilitary_support/models/item/test_nuke.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/TestNukeBlock.java",
+          "src/main/resources/assets/createmilitary_support/blockstates/test_nuke.json"
         ]
       },
       "path": "~/P51s Tests"
@@ -2776,8 +2678,8 @@
       "registry_name": "silogui",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/SiloguiMenu.java",
-          "src/main/java/net/mcreator/createmilitarysupport/client/gui/SiloguiScreen.java"
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/SiloguiScreen.java",
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/SiloguiMenu.java"
         ]
       },
       "path": "~/military/strike_device/gui for strike device"
@@ -2790,12 +2692,12 @@
       "registry_name": "silotester",
       "metadata": {
         "files": [
-          "src/main/resources/assets/createmilitary_support/models/block/silotester.json",
-          "src/main/resources/assets/createmilitary_support/blockstates/silotester.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/entity/SilotesterBlockEntity.java",
           "src/main/resources/data/createmilitary_support/loot_tables/blocks/silotester.json",
+          "src/main/resources/assets/createmilitary_support/models/block/silotester.json",
           "src/main/resources/assets/createmilitary_support/models/item/silotester.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/SilotesterBlock.java"
+          "src/main/java/net/mcreator/createmilitarysupport/block/SilotesterBlock.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/SilotesterBlockEntity.java",
+          "src/main/resources/assets/createmilitary_support/blockstates/silotester.json"
         ]
       },
       "path": "~/military/strike_device/gui for strike device"
@@ -2899,9 +2801,9 @@
       "registry_name": "strikedevicenewgui",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/client/gui/StrikedevicenewguiScreen.java",
           "src/main/java/net/mcreator/createmilitarysupport/network/StrikedevicenewguiButtonMessage.java",
-          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/StrikedevicenewguiMenu.java",
-          "src/main/java/net/mcreator/createmilitarysupport/client/gui/StrikedevicenewguiScreen.java"
+          "src/main/java/net/mcreator/createmilitarysupport/world/inventory/StrikedevicenewguiMenu.java"
         ]
       },
       "path": "~/military/strike_device/gui for strike device"
@@ -3059,8 +2961,8 @@
       "registry_name": "testibcm",
       "metadata": {
         "files": [
-          "src/main/java/net/mcreator/createmilitarysupport/entity/TestibcmEntity.java",
-          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/TestibcmRenderer.java"
+          "src/main/java/net/mcreator/createmilitarysupport/client/renderer/TestibcmRenderer.java",
+          "src/main/java/net/mcreator/createmilitarysupport/entity/TestibcmEntity.java"
         ]
       },
       "path": "~/military/strike_device/ibcm"
@@ -3073,16 +2975,16 @@
       "registry_name": "trinitytower",
       "metadata": {
         "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/block/renderer/TrinitytowerTileRenderer.java",
           "src/main/resources/assets/createmilitary_support/models/item/trinitytower.json",
+          "src/main/resources/assets/createmilitary_support/models/custom/trinitytower_particle.json",
+          "src/main/java/net/mcreator/createmilitarysupport/block/entity/TrinitytowerTileEntity.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/model/TrinitytowerDisplayModel.java",
+          "src/main/java/net/mcreator/createmilitarysupport/block/model/TrinitytowerBlockModel.java",
           "src/main/java/net/mcreator/createmilitarysupport/block/TrinitytowerBlock.java",
           "src/main/java/net/mcreator/createmilitarysupport/block/renderer/TrinitytowerDisplayItemRenderer.java",
-          "src/main/java/net/mcreator/createmilitarysupport/block/model/TrinitytowerDisplayModel.java",
-          "src/main/java/net/mcreator/createmilitarysupport/block/renderer/TrinitytowerTileRenderer.java",
-          "src/main/resources/assets/createmilitary_support/blockstates/trinitytower.json",
-          "src/main/java/net/mcreator/createmilitarysupport/block/model/TrinitytowerBlockModel.java",
           "src/main/java/net/mcreator/createmilitarysupport/block/display/TrinitytowerDisplayItem.java",
-          "src/main/java/net/mcreator/createmilitarysupport/block/entity/TrinitytowerTileEntity.java",
-          "src/main/resources/assets/createmilitary_support/models/custom/trinitytower_particle.json"
+          "src/main/resources/assets/createmilitary_support/blockstates/trinitytower.json"
         ]
       },
       "path": "~/military/strike_device"
@@ -3096,6 +2998,20 @@
       "metadata": {
         "files": [
           "src/main/java/net/mcreator/createmilitarysupport/procedures/BlockinmotionProcedure.java"
+        ],
+        "dependencies": []
+      },
+      "path": "~/basics in bombs_Testing grounds/procedural explosions"
+    },
+    {
+      "name": "Explodeinacircle",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "explodeinacircle",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/createmilitarysupport/procedures/ExplodeinacircleProcedure.java"
         ],
         "dependencies": [
           {
@@ -3194,7 +3110,6 @@
       "item.createmilitary_support.bomb_casing": "Bomb Casing",
       "item.createmilitary_support.loaded_bomb": "Loaded Bomb",
       "item.createmilitary_support.primer": "Primer",
-      "item.createmilitary_support.soldierfire_spawn_egg": "Soldierfire Spawn Egg",
       "key.createmilitary_support.militarysupportinteractkey": "Militarysupportinteractkey",
       "item.createmilitary_support.superleinfeild": "Super lein feild",
       "item.createmilitary_support.bullet_9mmlevel_2": "9mm bullet primer only",
@@ -3203,7 +3118,6 @@
       "item.createmilitary_support.bullet_9mmlevel_3": "Bullet 9mm powdered and primed",
       "subtitles.distant_nuke": "a nuclear bomb",
       "item.createmilitary_support.strikedevice": "Strike device",
-      "item.createmilitary_support.explode_5_spawn_egg": "Explode 5 Spawn Egg",
       "gui.createmilitary_support.support_codegeneratorgui.label_currency_on_card": "currency: ",
       "item.createmilitary_support.infpanzerfaust": "Infpanzerfaust",
       "item.createmilitary_support.level_1plate": "unfinished plate",
@@ -3228,7 +3142,6 @@
       "death.attack.obliterated.item": "%1$s was deatomised by %2$s using %3$s",
       "item.createmilitary_support.constructable_250level_2": "Construcables 250",
       "gui.createmilitary_support.silogui.label_in_progress": "IN PROGRESS",
-      "entity.createmilitary_support.soldierfire": "Soldierfire",
       "block.createmilitary_support.test_nuke": "Test Nuke",
       "block.createmilitary_support.silotester": "Silotester",
       "block.createmilitary_support.rivetpress": "Rivetpress",
@@ -3256,7 +3169,6 @@
       "item.createmilitary_support.supportcodegenerator": "Supportcodegenerator",
       "gui.createmilitary_support.support_codegeneratorgui.label_15cred": "15-cred",
       "item.createmilitary_support.screwdriver": "Screwdriver",
-      "entity.createmilitary_support.explode_5": "Explode 5",
       "item.createmilitary_support.loopertest": "Loopertest",
       "subtitles.bullet_hit": "pow",
       "gui.createmilitary_support.silogui.label_bomb_sphere": "bomb sphere:",
@@ -3470,5 +3382,5 @@
     "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.mcreator.createmilitarysupport"
   },
-  "mcreatorVersion": 202400232117
+  "mcreatorVersion": 202400340615
 }

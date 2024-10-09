@@ -60,6 +60,7 @@ public class CreatemilitarySupportMod {
 		CreatemilitarySupportModParticleTypes.REGISTRY.register(bus);
 		CreatemilitarySupportModVillagerProfessions.PROFESSIONS.register(bus);
 		CreatemilitarySupportModMenus.REGISTRY.register(bus);
+
 		// Start of user code block mod init
 		// End of user code block mod init
 	}
